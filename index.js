@@ -58,9 +58,20 @@ const card =  [
         number: 4,
         hebrewLetter: "Tzaddi",
         element: element.fire,
-        zodiac: 
+        zodiac: zodiac.aries,
+        planet: null,
+        description: `The Emperor symbolizes the structural element, stability, desire for security and continuity. It symbolizes our endeavor to isolate ourselves from natural conditions, from all their unpredictability. Even if we occasionally shoot too much at the target, it does not mean that we appreciate the positive sides of this often suspicious card. The Ruler also refers to our sense of order, common sense, discipline, responsibility, and pragmatic procedures, but also exaggerated in the form of stiffness, inanimateness, domination and a desire for steel power.`,
+        mainColors: [mainColors.red, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_04_Emperor.html`
     }
 ];
+
+function getRandomCard() {
+    const randomNum = Math.floor((Math.random() * 5));
+    return card[randomNum];
+}
+
+module.exports.getCard = getRandomCard;
     
     
     
