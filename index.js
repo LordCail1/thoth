@@ -1,18 +1,27 @@
-const mainColors = {red: "red", redOrange: "redOrange", orange: "orange", 
-yellowOrange: "yellowOrange", yellow: "yellow", yellowGreen: "yellowGreen", green: "green", blueGreen: "blueGreen", blue: "blue",
-blueViolet: "blueViolet", violet: "violet", redViolet: "redViolet", white: "white"};
+const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
+yellowOrange: "Yellow-Orange", yellow: "Yellow", yellowGreen: "Yellow-Green", green: "Green", blueGreen: "Blue-Green", blue: "Blue",
+blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black"};
 
-const element = {fire: "fire", water: "water", air: "air", earth: "earth"};
 
-const planet = {moon: "moon", mercury: "mercury", venus: "venus", sun: "sun", mars: "mars", jupiter: "jupiter", saturn: "saturn"};
-const zodiac = {aries: "aries", taurus: "taurus", gemini: "gemini", cancer: "cancer", leo: "leo", virgo: "virgo",
-scorpio: "scorpio", sagittarius: "sagittarius", capricorn: "capricorn", aquarius: "aquarius", pisces: "pisces"};
+const element = {fire: "Fire", water: "Water", air: "Air", earth: "Earth"};
+
+const hebrewLetter = {aleph: "Aleph", bet: "Bet", gimel: "Gimel", dalet: "Dalet", heh: "Heh",
+vau: "Vau", zain: "Zain", chet: "Chet", tet: "Tet", yod: "Yod", koph: "Koph", lamed: "Lamed",
+mem: "Mem", nun: "Nun", samekh: "Samekh", ayin: "Ayin", peh: "Peh", tzaddi: "Tzaddi",
+qof: "Qof", resh: "Resh", shin: "Shin", taw: "Taw"};
+
+
+const planet = {moon: "Moon", mercury: "Mercury", venus: "Venus", sun: "Sun", mars: "Mars", jupiter: "Jupiter", saturn: "Saturn"};
+
+
+const zodiac = {aries: "Aries", taurus: "Taurus", gemini: "Gemini", cancer: "Cancer", leo: "Leo", virgo: "Virgo", libra: "Libra",
+scorpio: "Scorpio", sagittarius: "Sagittarius", capricorn: "Capricorn", aquarius: "Aquarius", pisces: "Pisces"};
 
 const card =  [
     {
-        name: "theFool",
+        name: "The Fool",
         number: 0,
-        hebrewLetter: "Aleph",
+        hebrewLetter: hebrewLetter.aleph,
         element: element.air,
         zodiac: null,
         planet: null,
@@ -21,9 +30,9 @@ const card =  [
         link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_00_Fool.html`
     },
     {
-        name: "theMagician",
+        name: "The Magician",
         number: 1,
-        hebrewLetter: "Beis",
+        hebrewLetter: hebrewLetter.bet,
         element: element.air,
         zodiac: null,
         planet: planet.mercury,
@@ -32,9 +41,9 @@ const card =  [
         link: `The Magician symbolizes deity, skill, self-consciousness, and an active lifestyle. It indicates a period in which we can overcome difficult problems, with increased awareness and a vigilant wisdom to face challenges. Although this card represents the power of our consciousness, it does not express that emotions and other subconscious forces are negligible. On the contrary, the extraordinary power and efficiency exemplified by the Magus is based on the deep harmony between consciousness and subconsciousness. Only the resulting internal security can move mountains. The first human act of life is born from nothing, without experience and learning: this is the first instinctive creation. Spontaneous creation without goals and interests, in which one tries his strength and experiences his abilities.`
     },
     {
-        name: "theHighPriestess",
+        name: "The High Priestess",
         number: 2,
-        hebrewLetter: "Gimel",
+        hebrewLetter: hebrewLetter.gimel,
         element: element.water,
         zodiac: null,
         planet: planet.moon,
@@ -43,9 +52,9 @@ const card =  [
         link: `The High Priestess denotes unconscious power, tenderness, sensitivity, and often inexplicable but deeply rooted certainty. She is the key to the mysterious truth that cannot be approached with a logically thinking mind. She knows that the truth that can be spoken is never the eternal truth. Her clear side is the expression of patience, understanding, apology, goodness and forgiveness, as a helper, a healer, or a visionary for the power of the unconscious. But her shady side is the "dark nurse", the embodiment of the witch who uses the power of her spiritual power to seduce, paralyze or harm others. However, Tarot's interpretations emphasize only a friendly, helpful side.`
     },
     {
-        name: "theEmpress",
+        name: "The Empress",
         number: 3,
-        hebrewLetter: "Daleth",
+        hebrewLetter: hebrewLetter.dalet,
         element: element.earth,
         zodiac: null,
         planet: planet.venus,
@@ -54,27 +63,86 @@ const card =  [
         link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_03_Empress.html`
     },
     {
-        name: "theEmperor",
+        name: "The Emperor",
         number: 4,
-        hebrewLetter: "Tzaddi",
+        hebrewLetter: hebrewLetter.heh,
         element: element.fire,
         zodiac: zodiac.aries,
         planet: null,
         description: `The Emperor symbolizes the structural element, stability, desire for security and continuity. It symbolizes our endeavor to isolate ourselves from natural conditions, from all their unpredictability. Even if we occasionally shoot too much at the target, it does not mean that we appreciate the positive sides of this often suspicious card. The Ruler also refers to our sense of order, common sense, discipline, responsibility, and pragmatic procedures, but also exaggerated in the form of stiffness, inanimateness, domination and a desire for steel power.`,
         mainColors: [mainColors.red, mainColors.yellow],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_04_Emperor.html`
+    },
+    {
+        name: "The Hierophant",
+        number: 5,
+        hebrewLetter: hebrewLetter.vau,
+        element: element.earth,
+        zodiac: zodiac.taurus,
+        planet: null,
+        description: `The Hierophant (High Priest) embodies the deep confidence in the world of faith and religious certainty. This interpretation is favorable in many respects because the power of trust it expresses applies to our own self-confidence, our belief in the deeper meaning of our lives, and our consequent belief in the future. The card is also a guide to ethics and virtue, as well as personal intentions derived from our moral values. The High Priest is one of the moral teachings of the tarot. Although not after the High Priestess, he still represents a similar line of thought. The High Priest is the mediator of spiritual content that moves away from the earthly life, and the High Priest represents a spiritual, abstract search for the great questions of life.`,
+        mainColors: [mainColors.black, mainColors.yellowOrange, mainColors.orange],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_05_Hierophant.html`
+    },
+    {
+        name: "The Lovers",
+        number: 6,
+        hebrewLetter: hebrewLetter.zain,
+        element: element.air,
+        zodiac: zodiac.gemini,
+        planet: null,
+        description: `This card combines two themes. It refers to significant love experiences, but also realizes that this requires a decision: to abandon the limits of our lives (parental home, bachelor life, flirting) and to commit ourselves to our love. Only this step will lead to the overwhelming experience of the Lovers Card. That's why this card was called the Decision Card earlier. It may also represent necessary decisions that have nothing to do with or have little to do with love. In this case, it means having to decide with full heart without resentment and leaving openings. Which of the two topics the card refers to depends on the background of the question asked. In all cases it represents the great, unscrupulous yes.`,
+        mainColors: [mainColors.yellowOrange, mainColors.redOrange, mainColors.redViolet],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_06_Lovers.html`
+    },
+    {
+        name: "The Chariot",
+        number: 7,
+        hebrewLetter: hebrewLetter.chet,
+        element: element.water,
+        zodiac: zodiac.cancer,
+        planet: null,
+        description: `The Chariot is a great leap forward. It shows that we get away from our usual environment and walk our own way. For this, the desire for freedom, the search for lost paradise, or simply our pursuit of purpose, is the driving force behind this. The Triumph of the Triumph is the only Tarot card that depicts this journey as hopeful and joyful. In all other cases, we say goodbye to the heart and fear. Here, however, it is a matter of feeble, disobedient advancement, entrepreneurship and risk-taking. The card shows great skill in driving the car, but it also reflects our inexperience in the unknown world. Therefore, we must also interpret it as a warning not to overestimate our own power, not to be euphoric. Let's see in time that we have a lot to learn.`,
+        mainColors: [mainColors.blue, mainColors.red, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_07_Chariot.html`
+    },
+    {
+        name: "Adustment",
+        number: 8,
+        hebrewLetter: hebrewLetter.lamed,
+        element: element.air,
+        zodiac: zodiac.libra,
+        planet: null,
+        description: `
+        The Adjustment (Justice / Truth) Card covers several topics. It symbolizes clear, objective recognition, conscious and determined judgment, impartiality, balance and honesty, indicating that we can enforce our rights. At the level of everyday life, he says that we live our environment as the echo of our being, confronted with the consequences of our actions in good and bad. If we are honest and honest, we recognize and reward our activities; if, on the other hand, with dubious means, we want to gain a fool, we fail. This gives the card a great sense of responsibility. It shows that we do not receive anything as a gift, but do not deny us anything, that we bear the responsibility for everything we receive or experience.`,
+        mainColors: [mainColors.blueGreen, mainColors.blue],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_08_Adjustment.html`
     }
+
+   
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 5));
+    const randomNum = Math.floor((Math.random() * 9));
     return card[randomNum];
 }
 
-module.exports.getCard = getRandomCard;
+module.exports.getRandomCard = getRandomCard
+
     
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
