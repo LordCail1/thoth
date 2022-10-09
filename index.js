@@ -113,17 +113,38 @@ const card =  [
         element: element.air,
         zodiac: zodiac.libra,
         planet: null,
-        description: `
-        The Adjustment (Justice / Truth) Card covers several topics. It symbolizes clear, objective recognition, conscious and determined judgment, impartiality, balance and honesty, indicating that we can enforce our rights. At the level of everyday life, he says that we live our environment as the echo of our being, confronted with the consequences of our actions in good and bad. If we are honest and honest, we recognize and reward our activities; if, on the other hand, with dubious means, we want to gain a fool, we fail. This gives the card a great sense of responsibility. It shows that we do not receive anything as a gift, but do not deny us anything, that we bear the responsibility for everything we receive or experience.`,
+        description: `The Adjustment (Justice / Truth) Card covers several topics. It symbolizes clear, objective recognition, conscious and determined judgment, impartiality, balance and honesty, indicating that we can enforce our rights. At the level of everyday life, he says that we live our environment as the echo of our being, confronted with the consequences of our actions in good and bad. If we are honest and honest, we recognize and reward our activities; if, on the other hand, with dubious means, we want to gain a fool, we fail. This gives the card a great sense of responsibility. It shows that we do not receive anything as a gift, but do not deny us anything, that we bear the responsibility for everything we receive or experience.`,
         mainColors: [mainColors.blueGreen, mainColors.blue],
         link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_08_Adjustment.html`
+    },
+    {
+        name: "The Hermit",
+        number: 9,
+        hebrewLetter: hebrewLetter.yod,
+        element: element.earth,
+        zodiac: zodiac.virgo,
+        planet: null,
+        description: `The Hermit is the card of retreat and turning into ourselves. It depicts an introverted phase of life, separating ourselves from foreign influences, so that we find ourselves again in peace and out of our zealous activity and, above all, ourselves. Thus, The Hermit refers to significant experiences in recognizing who we are, what we want and how we can achieve it. It combines two valuable extremes: the depth of experience and the high level of recognition. Many people are unfounded about this card. Fear of loneliness and abandonment only appears when they are misunderstood. Anyone who follows the call of The Hermit voluntarily enriches with light, strength and the happy experience that she can be alone.`,
+        mainColors: [mainColors.blueGreen, mainColors.red, mainColors.yellow],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_09_Hermit.html`
+    },
+    {
+        name: "Wheel Of Fortune",
+        number: 10,
+        hebrewLetter: hebrewLetter.koph,
+        element: element.fire,
+        zodiac: null,
+        planet: planet.jupiter,
+        description: `According to how we face our destiny, the card refers to our helplessness and helplessness or to the life experience that helps our development and maturation. At the level of events, the Whee of Fortune often shows situations that we are not able to influence yet. The descending side of the Wheel means that our plans simply fail, weather, road traffic, airport strike, revenge of objects, or other "higher power" destroys our plans. The Wheel of Fortune then shows that it is not (yet) time to realize our intention. In other places, the card in this case provides valuable guidance on how to get to the other, ascending side of the Wheel. This is lucky, pleasant, and even surprising.`,
+        mainColors: [mainColors.violet, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_10_Fortune.html`
     }
 
    
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 9));
+    const randomNum = Math.floor((Math.random() * 10));
     return card[randomNum];
 }
 
