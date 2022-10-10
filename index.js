@@ -268,7 +268,10 @@ function getRandomCard() {
     return card[randomNum];
 }
 
-module.exports.getRandomCard = getRandomCard
+module.exports.getRandomCard = getRandomCard;
+module.exports.element = element;
+module.exports.card = card;
+module.exports.planet = planet;
 
     
 

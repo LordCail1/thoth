@@ -1,6 +1,11 @@
-const obj = require("./index");
+const thoth = require("./index");
 
+const wantedArray = [];
 
-for (let i = 0; i < 500; i++) {
-    console.log(obj.getRandomCard());
+for (let card of thoth.card) {
+    if (card.planet === thoth.planet.mercury) {
+        wantedArray.push(card);
+    }
 }
+
+console.log(wantedArray);
