@@ -1,6 +1,6 @@
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
 yellowOrange: "Yellow-Orange", yellow: "Yellow", yellowGreen: "Yellow-Green", green: "Green", blueGreen: "Blue-Green", blue: "Blue",
-blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black"};
+blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black", brown: "Brown"};
 
 
 const element = {fire: "Fire", water: "Water", air: "Air", earth: "Earth"};
@@ -81,7 +81,7 @@ const card =  [
         zodiac: zodiac.taurus,
         planet: null,
         description: `The Hierophant (High Priest) embodies the deep confidence in the world of faith and religious certainty. This interpretation is favorable in many respects because the power of trust it expresses applies to our own self-confidence, our belief in the deeper meaning of our lives, and our consequent belief in the future. The card is also a guide to ethics and virtue, as well as personal intentions derived from our moral values. The High Priest is one of the moral teachings of the tarot. Although not after the High Priestess, he still represents a similar line of thought. The High Priest is the mediator of spiritual content that moves away from the earthly life, and the High Priest represents a spiritual, abstract search for the great questions of life.`,
-        mainColors: [mainColors.black, mainColors.yellowOrange, mainColors.orange],
+        mainColors: [mainColors.black, mainColors.yellowOrange, mainColors.orange, mainColors.brown],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_05_Hierophant.html`
     },
     {
@@ -138,13 +138,133 @@ const card =  [
         description: `According to how we face our destiny, the card refers to our helplessness and helplessness or to the life experience that helps our development and maturation. At the level of events, the Whee of Fortune often shows situations that we are not able to influence yet. The descending side of the Wheel means that our plans simply fail, weather, road traffic, airport strike, revenge of objects, or other "higher power" destroys our plans. The Wheel of Fortune then shows that it is not (yet) time to realize our intention. In other places, the card in this case provides valuable guidance on how to get to the other, ascending side of the Wheel. This is lucky, pleasant, and even surprising.`,
         mainColors: [mainColors.violet, mainColors.yellow],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_10_Fortune.html`
+    },
+    {
+        name: "Lust",
+        number: 11,
+        hebrewLetter: hebrewLetter.tet,
+        element: element.fire,
+        zodiac: zodiac.leo,
+        planet: null,
+        description: `The Strength (Lust) Card, in a sense, has a relationship with the Magician. As there, there is a secret, deep, inner harmony as the basis of special power. While the power of the Magician is influenced by the harmony of conscious and subconscious forces, the power, courage and passion of this card expresses the reconciliation of civilized man with his own animal nature. This card makes it clear that we cannot hide our instinct behind pale virtues, but we must openly face the sometimes scary archaic forces in us, accepting them slowly, tame by gentle violence. In this way, we have not only these ancient forces available, but all our resources that have been used to suppress our instincts.`,
+        mainColors: [mainColors.orange, mainColors.violet],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_card`
+    },
+    {
+        name: "The Hanged Man",
+        number: 12,
+        hebrewLetter: hebrewLetter.mem,
+        element: element.water,
+        zodiac: null,
+        planet: null,
+        description: `The superficial meaning of the Hanged Man is that we are stuck, we are in a dog clutch. However, looking deeper, the external immobility of this forced resting state is indispensable. It is also possible to change our world view and our whole life with in-depth analysis. This episode of condemnation can be characterized by the image of the disease, which is often indicated by the card. The other names of the 12th card are: the world set on his head, the crucified, the victim, the trial. The male figure on the card is upside-down, with two legs hanging by his feet. However, this uncomfortable posture makes it easy: the man crouches one of his legs playfully, holding a flute in his hand. This condition causes more joy than pain. CG Jung writes about the experience expressed by the Hanged Man: "The dislocation ... can be a positive" hanging ", which, on the one hand, appears to be an insurmountable difficulty, and on the other hand it represents a unique situation that requires maximum effort and therefore wants a whole person."`,
+        mainColors: [mainColors.blueGreen, mainColors.blue, mainColors.white],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_12_Hanged_Man.html`
+    },
+    {
+        name: "Death",
+        number: 13,
+        hebrewLetter: hebrewLetter.nun,
+        element: element.water,
+        zodiac: zodiac.scorpio,
+        planet: null,
+        description: `Death means farewell, the great release, the end. At the same time, it is preparing the new way of coming; the card itself, however, primarily exposes us to the end. Within this, it may mean the long-awaited, liberating ending, but it may of course also refer to our most painful experiences. Unlike the Swords, which is a voluntary and thus premature end, this card always marks the natural end and the time has come to let go of something. Death is unreasonably one of the dreaded cards. Those who wear pink glasses will only interpret the card as their new messenger and want to deprive us of the profound experience of farewell and the associated life-long experience. "We have separated life and death, the time between the two is fear," says Krishnamurti, and adds: "We cannot live without dying."`,
+        mainColors: [mainColors.black, mainColors.yellowOrange],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_13_Death.html`
+    },
+    {
+        name: "Art",
+        number: 14,
+        hebrewLetter: hebrewLetter.samekh,
+        element: element.fire,
+        zodiac: zodiac.sagittarius,
+        planet: null,
+        description: `This card is the healthy counterpart of the next Devil (XV) card, who is the embodiment of incapacity. Harmony, balance, calmness and spiritual peace are the hallmarks of Measurement. This means a happy experience of health and spiritual balance, that is, we treat ourselves well, we love ourselves and therefore live in harmony with our environment. Depending on the background of our question, it may mean healing or recovery. This card is an expression of a state of equilibrium, the creation of which presupposes the balancing and temperamental ability of man. In this life situation, one tries to find a realistic middle ground between his desires and possibilities.`,
+        mainColors: [mainColors.yellow, mainColors.red, mainColors.white, mainColors.green],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_14_Art.html`
+    },
+    {
+        name: "The Devil",
+        number: 15,
+        hebrewLetter: hebrewLetter.ayin,
+        element: element.earth,
+        zodiac: zodiac.capricorn,
+        planet: null,
+        description: `Depending on the nature of all the Tarot cards, the Devil is the most difficult to grasp because it shows a different face to everyone. In his experiences, the common feature is the addiction, the willlessness, the failure of good intentions, and the actions that contradict our conviction. The Devil corresponds to the Dark Side of many Tarot Cards: Unlike Magus (I), he is the Black Magician. Part of the dark side of the High Priestess (II), he is the hypocrite of the High Priest (V), the admirer of the material world; He embodies the unbridled greed of Lust (XI), he is the opposite of Temperance (XIV), the inferiority, he dominates the other parts of the Moon (XVIII). As haunting, of course, it often appears in an attractive form. The card shows that we are playing with the fire and we have to pay attention to hell (!) to avoid burning ourselves. At a deeper level of interpretation it means that we have to face our own shady side of the question.`,
+        mainColors: [mainColors.violet, mainColors.black, mainColors.brown],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_15_Devil.html`
+    },
+    {
+        name: "The Tower",
+        number: 16,
+        hebrewLetter: hebrewLetter.peh,
+        element: element.fire,
+        zodiac: null,
+        planet: planet.mars,
+        description: `The Tower shows that the walls raised around the perceived security are suddenly swirling. It is usually about structures and dimensions that have become too narrow for us. This can affect our beliefs and principles as well as our professional and financial security ideas, not least our friendly and other personal relationships. In any case, the tower represents a concept that has previously provided us with benevolent security, perhaps even a defense, but from which we have now grown. Usually surprising experiences, sometimes sparkling ideas that ruin the old concept. Since this is primarily about the perceived base of our security, these sudden changes are often seen as disasters. Only after the first shock is over is we relieved that we have been freed from the old burden. This breakthrough can be triggered either by our own recognition or by an external event. Ji Ching says: "The storm that comes with lightning and rumble overcomes the destructive tensions of nature."`,
+        mainColors: [mainColors.red, mainColors.black],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_16_Tower.html`
+    },
+    {
+        name: "The Star",
+        number: 17,
+        hebrewLetter: hebrewLetter.tzaddi,
+        element: element.air,
+        zodiac: zodiac.aquarius,
+        planet: null,
+        description: `The Star is a card of discovery of hope, wisdom, and deeper relationships. It shows that we are designing or launching dogs that go far into the future and whose positive development can be rightly hoped for. At this early stage, we are often not yet aware of the far-reaching effects of our actions. It is only by looking back at the events that it becomes clear to us how decisive the change of direction the Star was at that time. As the greening of sowing, the recognition of the results of this action also takes time. The traditional interpretation considers Star as one of the three protective cards, which promises joyful success.`,
+        mainColors: [mainColors.blue, mainColors.blueViolet, mainColors.violet],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_17_Star.html`
+    },
+    {
+        name: "The Moon",
+        number: 18,
+        hebrewLetter: hebrewLetter.qof,
+        element: element.water,
+        zodiac: zodiac.pisces,
+        planet: null,
+        description: `The Moon card guides you into the darkness and the night, into the mysterious worlds of the soul, showing our beliefs, desires, and dreams. The bright side of the moon denotes romantic dreaming, vivid fantasy and highly sophisticated sensitivity. Still, the card shows the dark side, the depths of the soul. It symbolizes our fears, insecurities, nightmares, dark conjectures, the horror of the invisible, elusive things, and the shiver. We feel this fear when we pass through the night forest, which we cut through in the daytime, but in the dark it teaches fear. It may also be the fear of old-time demons that have been given a new name in our enlightened age: bacteria, virus, milirem, becquerel, lead-contaminated air, acid rain.`,
+        mainColors: [mainColors.brown, mainColors.black, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_18_Moon.html`
+    },
+    {
+        name: "The Sun",
+        number: 19,
+        hebrewLetter: hebrewLetter.resh,
+        element: element.fire,
+        zodiac: null,
+        planet: planet.sun,
+        description: `The Sun card is the embodiment of great joy of life, vitality, warmth and confidence. It also means the enlightening power of consciousness, with which we get a clear picture and overcome our troubles, irritating factors and our ghostly fears. It gives you youthful freshness and a feeling of rebirth. It symbolizes the sunny side of life. At a deeper level of interpretation, he calls for us to overcome the darkness, unfold our sunny nature, redeem our dark brother or sister, helping the light.`,
+        mainColors: [mainColors.yellow, mainColors.green, mainColors.redOrange],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_19_Sun.html`
+    },
+    {
+        name: "The Aon",
+        number: 20,
+        hebrewLetter: hebrewLetter.shin,
+        element: element.fire,
+        zodiac: null,
+        planet: null,
+        description: `
+        The Judgment card is easily misunderstood if we start from its name. The punishment, the damnation, and consequently the fear and fright, are the main reasons for the judgment, especially the final judgment here. The meaning of the card, however, can only be interpreted on the basis of its symbols and the underlying spiritual and mythological images. The resurrection depicted here illustrates the captivating experience of salvation, showing the liberation of the things that have been buried or detained so far, that the divine stands out from the darkness of the prisons and comes to light. This proves the happy meaning of the card. By becoming self, it represents the decisive step of a successful process of alchemical change that creates a higher order from the lower order. At the ordinary level, it means all forms of liberation: liberation from troubles, necessity, ungrateful situations and relationships, inhibitions and shyness. It may also refer to the real "treasure" of our card's intention.`,
+        mainColors: [mainColors.redOrange, mainColors.blue],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_20_Aeon.html`
+    },
+    {
+        name: "The Universe",
+        number: 21,
+        hebrewLetter: hebrewLetter.taw,
+        element: element.earth,
+        zodiac: null,
+        planet: planet.saturn,
+        description: `The World (Universe) card shows the newly found unit, the experience of profound harmony and the joyful completion of a development process. Words to grab the beauty of this card would be to put a happy end on an emotional story. During the hero's journey, he represents the happy ending, the newly found Paradise, which simply means to achieve our goal in everyday life. Rarely, this is the real purpose of our life, but it is usually an important intermediate station. At the level of our external experiences, we have found our place in the world, the place we really belong to. In the field of our spiritual experiences, the card of the world refers to the fact that we have made a significant and even decisive step towards becoming ourselves, our true credibility, our own fullness. It is a happy time for events, in which we enjoy our existence openly and with full vitality. It may also mean that we care or travel internationally.`,
+        mainColors: [mainColors.brown, mainColors.yellowOrange, mainColors.green],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_21_Universe.html`
     }
-
-   
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 10));
+    const randomNum = Math.floor((Math.random() * 22));
     return card[randomNum];
 }
 
