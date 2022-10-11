@@ -3,7 +3,7 @@ const thoth = require("./index");
 const wantedArray = [];
 
 for (let card of thoth.card) {
-    if (card.planet === thoth.planet.mercury) {
+    if (card.name === "Seven Of Wands") {
         wantedArray.push(card);
     }
 }
