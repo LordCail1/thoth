@@ -1,6 +1,6 @@
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
 yellowOrange: "Yellow-Orange", yellow: "Yellow", yellowGreen: "Yellow-Green", green: "Green", blueGreen: "Blue-Green", blue: "Blue",
-blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black", brown: "Brown"};
+blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black", brown: "Brown", grey: "Grey"};
 
 
 const element = {fire: "Fire", water: "Water", air: "Air", earth: "Earth"};
@@ -366,6 +366,67 @@ const card =  [
         description: `The Seven of Wands means someone is attacking us and we have to face our competitors, those who envy us or other opponents who are often stronger than us or in the majority. At the same time, the card also shows that we still have good prospects for success because we are fighting for our fight from a favorable position. It also warns us to be clever and alert, and not to play our position advantageously. Of course, this is the rarest case of implicit attacks, it is more about interfering in our personal world, or threatening something that we have achieved or want to achieve.`,
         mainColors: [mainColors.violet, mainColors.yellowOrange],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_46_Wands_7.html`
+    },
+    {
+        name: "Eight Of Wands",
+        number: 8,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: zodiac.sagittarius,
+        planet: planet.mercury,
+        description: `The main meaning of the Eight of Wands card is the temporal aspect. The only one of the 78 Tarot cards that clearly indicates that we are facing of an event. In addition, there is no deeper meaning. It shows that something is moving, something is in the air, something is happening faster than expected, and that some developments have already begun without noticing. Usually, it is a forerunner of some good news or events.`,
+        mainColors: [mainColors.blue, mainColors.yellow, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_47_Wands_8.html`
+    },
+    {
+        name: "Nine Of Wands",
+        number: 9,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: zodiac.sagittarius,
+        planet: planet.moon,
+        description: `The Nine of Wands card present defy and resistance against a threatening situation or experience. At the same time, it points out that in reality there is no objective threat (as opposed to the Seven of Wands), only the memory of our past painful experiences evoke these fears and the defensive reaction. It indicates a closure, often referred to as "cone heart" in the tale. In general, he says that we do not want to take steps that are important for our own development. In some cases, however, it refers almost completely to the opposite: we have just made a decisive step, and now we are closing the door with full force, cutting off the path of retreat. In this case, it's meaning is much more positive and developmental, but it shows that we did not do something right: we ran away and we fear that the past will catch up. However, true farewell means that we have already closed the given period of experience in our lives, we have already defeated it and no longer fear the past.`,
+        mainColors: [mainColors.grey, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_48_Wands_9.html`
+    },
+    {
+        name: "Ten Of Wands",
+        number: 10,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: zodiac.sagittarius,
+        planet: planet.saturn,
+        description: `The Ten of Wands is the card of despair, showing that we have overestimated our strength and thus lost the broad perspective. In addition, you can also express the clumsy handling of things. It often means that we skipped a few degrees on the ladder of development, and in our new environment, we feel overwhelmed first. Our task and responsibility is to push our shoulder with the weight of the mill wheel. We may fail. To the extent that we grow up to the requirements of our new living space, we reduce our overload and despair, and learn to handle our tasks more skillfully.`,
+        mainColors: [mainColors.orange, mainColors.blue],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_49_Wands_10.html`
+    },
+    {
+        name: "Princess Of Wands",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: null,
+        planet: null,
+        description: `The Page cards mean chances and opportunities that cross our path. The chance represented by the Page of the Wands corresponds to the Fire element, which is a fascinating impulse or suggestion that we welcome. An opportunity beyond our previous experience: an opportunity that awakens adventure, demands courage and risk-taking, increases the tension of our lives, because you get rid of the paralyzing routine of everyday life. It may be a strenuous sporting activity, an occasion to measure our own border areas or to experience less exciting everyday experiences and experiences.`,
+        mainColors: [mainColors.red, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_39_Wands_Princess.html`
+    },
+    {
+        name: "Prince Of Wands",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: null,
+        planet: null,
+        description: `
+        In the warm and even hot atmosphere of the Knight of Wands, life-longness, passion and enthusiasm for the fan are buzzing, but there is no lack of impatience, hot-bloodedness, impulsiveness, and unbridled exaggeration. That is why it depends to a great extent on the living space characterized by the card that we enjoy our caressing warmth or fear of heat and variability. The card expresses impatience, we want everything, right away. If that doesn't work or we don't get what we want, we will be agonizing, angry, aggressive. On the other hand, the stimulating and captivating warmth radiated by the Knight of Wands can unleash the frosty atmosphere and move the jammed matter away from the deadlock.`,
+        mainColors: [mainColors.yellowOrange, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_38_Wands_Prince.html`
     }
 
 
