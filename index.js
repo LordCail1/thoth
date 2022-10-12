@@ -423,29 +423,46 @@ const card =  [
         element: element.fire,
         zodiac: null,
         planet: null,
-        description: `
-        In the warm and even hot atmosphere of the Knight of Wands, life-longness, passion and enthusiasm for the fan are buzzing, but there is no lack of impatience, hot-bloodedness, impulsiveness, and unbridled exaggeration. That is why it depends to a great extent on the living space characterized by the card that we enjoy our caressing warmth or fear of heat and variability. The card expresses impatience, we want everything, right away. If that doesn't work or we don't get what we want, we will be agonizing, angry, aggressive. On the other hand, the stimulating and captivating warmth radiated by the Knight of Wands can unleash the frosty atmosphere and move the jammed matter away from the deadlock.`,
+        description: `In the warm and even hot atmosphere of the Knight of Wands, life-longness, passion and enthusiasm for the fan are buzzing, but there is no lack of impatience, hot-bloodedness, impulsiveness, and unbridled exaggeration. That is why it depends to a great extent on the living space characterized by the card that we enjoy our caressing warmth or fear of heat and variability. The card expresses impatience, we want everything, right away. If that doesn't work or we don't get what we want, we will be agonizing, angry, aggressive. On the other hand, the stimulating and captivating warmth radiated by the Knight of Wands can unleash the frosty atmosphere and move the jammed matter away from the deadlock.`,
         mainColors: [mainColors.yellowOrange, mainColors.red],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_38_Wands_Prince.html`
+    },
+    {
+        name: "Queen Of Wands",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: null,
+        planet: null,
+        description: `The Queen of Wands embodies the female power of the Fire Element. Meaning self-confidence, self-determination, cat-like simulation, which is more of an expression of wisdom than adaptability. The Queen of Wands is open, enterprising, and has strong will. Its source of power is its pride, which, in turn, sensitizes criticism, demands recognition and admiration. It represents a level of vitality and lifestyle that is already bordering on the insane bursting, and it can also devote itself to excessive spending. His acting talent and life-spaning passion make him the queen of drama, mostly expressed in the form of Carmen.`,
+        mainColors: [mainColors.yellow, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_37_Wands_Queen.html`
+    },
+    {
+        name: "Knight Of Wands",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.fire,
+        zodiac: null,
+        planet: null,
+        description: `The Knight (King) of the Wands depicts the male side of the Fire Element, the creative power of which is the Sun King, it represents the form of Louis XIV.. Self-confidence, life-giving, wealth, power and greatness. These qualities are not necessarily superficial, enjoying our own greatness, but exemplary, for the benefit of all participants. The card is an expression of willpower, development, perfection of personality, and aspiration to maturity. Only in the case of negative exaggeration, it becomes self-embracing, indulgence, splendor, and bragging.`,
+        mainColors: [mainColors.red, mainColors.yellow, mainColors.black],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_36_Wands_Knight.html`
+    },
+    {
+        name: "Ace Of Cups",
+        number: 1,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.water,
+        zodiac: null,
+        planet: null,
+        description: `The Ace of Cups is one of the Tarot's most lucky cards. With the rest of Aces, it shows the great potential in us, which can lead to the highest fulfillment. The personal significance of this depends on the person's relationship with life. The spectrum of the card extends from the feeling of joy, gratitude, and satisfaction over external success to the deepest happiness of living in unity with everything. In the foreground, there is undoubtedly love, in every form of expression: charity, parental love, sensual, erotic love, love of ourselves and love of God. Of course, the card may also indicate other, more common forms of joy and luck, although the material side of this concept is expressed by the Ace of Disks. In any case, keep in mind that there is a great potential for our intentions, or that it occurs in the realization of our plan. Not intrusive, waiting for exploration and unfolding.`,
+        mainColors: [mainColors.blue, mainColors.white, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_54_Cups_1.html`
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 function getRandomCard() {
