@@ -1,3 +1,5 @@
+
+
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
 yellowOrange: "Yellow-Orange", yellow: "Yellow", yellowGreen: "Yellow-Green", green: "Green", blueGreen: "Blue-Green", blue: "Blue",
 blueViolet: "Blue-Violet", violet: "Violet", redViolet: "Red-Violet", white: "White", black: "Black", brown: "Brown", grey: "Grey"};
@@ -40,7 +42,7 @@ const card =  [
         planet: planet.mercury,
         description: `The Magician symbolizes deity, skill, self-consciousness, and an active lifestyle. It indicates a period in which we can overcome difficult problems, with increased awareness and a vigilant wisdom to face challenges. Although this card represents the power of our consciousness, it does not express that emotions and other subconscious forces are negligible. On the contrary, the extraordinary power and efficiency exemplified by the Magus is based on the deep harmony between consciousness and subconsciousness. Only the resulting internal security can move mountains. The first human act of life is born from nothing, without experience and learning: this is the first instinctive creation. Spontaneous creation without goals and interests, in which one tries his strength and experiences his abilities.`,
         mainColors: [mainColors.blue, mainColors.yellow],
-        link: `The Magician symbolizes deity, skill, self-consciousness, and an active lifestyle. It indicates a period in which we can overcome difficult problems, with increased awareness and a vigilant wisdom to face challenges. Although this card represents the power of our consciousness, it does not express that emotions and other subconscious forces are negligible. On the contrary, the extraordinary power and efficiency exemplified by the Magus is based on the deep harmony between consciousness and subconsciousness. Only the resulting internal security can move mountains. The first human act of life is born from nothing, without experience and learning: this is the first instinctive creation. Spontaneous creation without goals and interests, in which one tries his strength and experiences his abilities.`
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_01_Magus.html`
     },
     {
         name: "The High Priestess",
@@ -52,7 +54,7 @@ const card =  [
         planet: planet.moon,
         description: `The High Priestess denotes unconscious power, tenderness, sensitivity, and often inexplicable but deeply rooted certainty. She is the key to the mysterious truth that cannot be approached with a logically thinking mind. She knows that the truth that can be spoken is never the eternal truth. Her clear side is the expression of patience, understanding, apology, goodness and forgiveness, as a helper, a healer, or a visionary for the power of the unconscious. But her shady side is the "dark nurse", the embodiment of the witch who uses the power of her spiritual power to seduce, paralyze or harm others. However, Tarot's interpretations emphasize only a friendly, helpful side.`,
         mainColors: [mainColors.blue, mainColors.blueViolet, mainColors.white],
-        link: `The High Priestess denotes unconscious power, tenderness, sensitivity, and often inexplicable but deeply rooted certainty. She is the key to the mysterious truth that cannot be approached with a logically thinking mind. She knows that the truth that can be spoken is never the eternal truth. Her clear side is the expression of patience, understanding, apology, goodness and forgiveness, as a helper, a healer, or a visionary for the power of the unconscious. But her shady side is the "dark nurse", the embodiment of the witch who uses the power of her spiritual power to seduce, paralyze or harm others. However, Tarot's interpretations emphasize only a friendly, helpful side.`
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_02_High_Priestess.html`
     },
     {
         name: "The Empress",
@@ -466,14 +468,15 @@ const card =  [
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 22));
+    const randomNum = Math.floor((Math.random() * 38));
     return card[randomNum];
 }
 
-module.exports.getRandomCard = getRandomCard;
+
 module.exports.element = element;
 module.exports.card = card;
 module.exports.planet = planet;
+module.exports.getRandomCard = getRandomCard;
 
     
 

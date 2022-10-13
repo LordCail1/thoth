@@ -1,3 +1,45 @@
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: black;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.card-container {
+  background-color: rgba(255, 255, 255, 0.317);
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+}
+.card-container .image-container {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+}
+.card-container .image-container .tarot-image {
+  height: 500px;
+}
+.card-container .info-container {
+  background-color: orange;
+  margin: 30px;
+  padding: 30px;
+}
+
+.form-container button {
+  height: 50px;
+  margin: 50px;
+  border-radius: 20px;
+  transition: background-color 100ms ease-in-out;
+}
+.form-container button:hover {
+  cursor: pointer;
+  background-color: grey;
 }/*# sourceMappingURL=styles.css.map */
