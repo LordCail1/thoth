@@ -473,18 +473,6 @@ function getRandomCard() {
 }
 
 
-module.exports.element = element;
-module.exports.card = card;
-module.exports.planet = planet;
-module.exports.getRandomCard = getRandomCard;
-
-    
-
-
-
-
-
-
 
 
 
