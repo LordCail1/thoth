@@ -2,7 +2,7 @@
   "name": "tarot",
   "version": "1.0.0",
   "description": "tarot app",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

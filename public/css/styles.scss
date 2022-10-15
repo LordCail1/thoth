@@ -3,7 +3,48 @@ body {
     background-position-y: -300px;
     background-attachment: fixed;
     background-size: 1900px;
+    margin: 0;
 }
+
+header {
+    .navbar {
+        border: 1px solid white;
+    
+        .navbar-button {
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.2);
+            color: white;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card-container {
+    border: 1px solid white;
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1900px) {

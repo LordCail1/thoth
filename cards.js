@@ -472,6 +472,9 @@ function getRandomCard() {
     return card[randomNum];
 }
 
+module.exports.card = card;
+module.exports.getRandomCard = getRandomCard;
+
 
 
 
