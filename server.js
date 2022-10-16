@@ -15,7 +15,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/getAllCards", (req, res) => {
-    res.send(card);
+    const specificCard = card.getRandomCard();
+    
+    res.end(JSON.stringify(specificCard));
+
+
+
 });
 
 
