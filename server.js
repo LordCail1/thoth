@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.get("/getAllCards", (req, res) => {
     const specificCard = card.getRandomCard();
     
-    res.end(JSON.stringify(specificCard));
+    res.send(JSON.stringify(specificCard));
 
 
 
