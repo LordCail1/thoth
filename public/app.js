@@ -6,19 +6,7 @@ const mainContainer = document.querySelector("[data-main-container]");
 
 
 generateCardsBtn.addEventListener("click", (e) => {
-    
-    fetch("http://localhost:5000/getAllCards", {
-        method: "GET",
-        headers: {
-            "Content-Type":"application/json"
-        }
-    })
-    .then(res => {
-        return res.json();
-    })
-    .then(data => addNewCard(data))
-    .catch(error => console.log("ERROR"));
-
+    layOutCard().catch(error => console.log("ERROR"));
 });
 
 function addNewCard(card) {
@@ -39,8 +27,18 @@ function addNewCard(card) {
         newDiv.appendChild(p);
     }
     newDiv.classList.add("card-container");
-    
     mainContainer.appendChild(newDiv);
+}
+
+async function layOutCard() {
+    const response = await fetch("http://localhost:5000/getAllCards", {
+        method: "GET",
+        headers: {
+            "Content-Type":"application/json"
+        }
+    });
+    const data = await response.json();
+    addNewCard(data);
 }
 
 
