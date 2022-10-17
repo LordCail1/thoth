@@ -1,0 +1,24 @@
+{
+  "name": "tarot",
+  "version": "1.0.0",
+  "description": "tarot app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordCail1/thoth.git"
+  },
+  "author": "Rami Elbatnigi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordCail1/thoth/issues"
+  },
+  "homepage": "https://github.com/LordCail1/thoth#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,81 @@
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+body {
+    background-image: url(../background/city-light.png);
+    background-position-y: -300px;
+    background-attachment: fixed;
+    background-size: 1900px;
+    margin: 0;
+    color: white;
+}
+
+.card-info {
+    font-size: 2rem;
+}
+
+header {
+    .navbar {
+        border: 1px solid white;
+        position: fixed;
+    
+        .navbar-button {
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.2);
+            border: none;
+            color: inherit;
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0,0,0,1);
+            }
+        }
+        .blue-water {
+            color: dodgerblue;
+        }
+        .brown-earth {
+            color: brown;
+        }
+        .red-fire {
+            color: red;
+        }
+        .yellow-air {
+            color: yellow;
+
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .card-container {
+        padding: 50px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 20%;
+        .card-link {
+            margin: 20px;
+            font-size: 3rem;
+            &:hover {
+                color: white;
+            }
+
+        }
+        
+    }
+}
+
+
+
+@media screen and (min-width: 1900px) {
+    body {
+        background-size: 100%;
+    }
+}
+
