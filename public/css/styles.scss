@@ -22,6 +22,7 @@ header {
         position: fixed;
     
         .navbar-button {
+            font-size: 2rem;
             padding: 10px;
             border-radius: 10px;
             background: rgba(0,0,0,0.2);
@@ -59,31 +60,9 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1900px) {
     body {
         background-size: 100%;
     }
 }
 
-@media screen and (min-height: 950px) {
-    body {
-        background-size: 2600px;
-    }
-}
