@@ -16,11 +16,15 @@ app.get("/", (req, res) => {
 
 app.get("/getAllCards", (req, res) => {
     const specificCard = card.getRandomCard();
-    
+    res.download(`./images/${specificCard.imageName}.jpg`);
+    console.log("this ran");
+    console.log(specificCard);
     res.send(JSON.stringify(specificCard));
+});
 
-
-
+app.get("/image", (req, res) => {
+    console.log(req.query.imageName);
+    res.download(`./images/${req.query.imageName}.jpg`);
 });
 
 
