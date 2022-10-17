@@ -1,5 +1,6 @@
 const generateCardsBtn = document.querySelector("[data-generate-cards]");
 const mainContainer = document.querySelector("[data-main-container]");
+const pulledCards = [];
 
 
 
@@ -19,6 +20,7 @@ async function layOutCard() {
         }
     });
     const card = await cardResponse.json();
+    pulledCards.push(card);
     
     //getting image
     const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);

@@ -32,6 +32,18 @@ header .navbar .navbar-button:hover {
   cursor: pointer;
   background-color: rgb(0, 0, 0);
 }
+header .navbar .blue-water {
+  color: dodgerblue;
+}
+header .navbar .brown-earth {
+  color: brown;
+}
+header .navbar .red-fire {
+  color: red;
+}
+header .navbar .yellow-air {
+  color: yellow;
+}
 
 main {
   display: grid;
