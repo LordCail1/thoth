@@ -1,3 +1,4 @@
+const { urlencoded } = require("body-parser");
 
 
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
@@ -30,7 +31,7 @@ const card =  [
         planet: null,
         description: `The Fool personifies the child in us. Spontaneously represents a fresh start and an open-minded openness. The expression of playful, life-like carelessness shows that we are entering a new area of our lives with astonishment, strong expectations and often without prior knowledge. It may also refer to the mood of a child, and therefore to carelessness, foolish naivety, playfulness, but it can also mean foolishness, or the simplicity of wise and humble insight, which we can only come at the end of a long and often arduous journey. The Fool can embody the copy, the blatant fraternity, but even the only honest court advisor as the king's alter native. In all cases, living in the present, expressing openness and spontaneous honesty, is always ready for new experiences.`,
         mainColors: [mainColors.yellow, mainColors.green],
-        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_00_Fool.html`
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_00_Fool.html`,
     },
     {
         name: "The Magician",
@@ -468,8 +469,9 @@ const card =  [
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 38));
+    const randomNum = Math.floor((Math.random() * 1)); //38 is original value
     return card[randomNum];
+    
 }
 
 module.exports.card = card;
