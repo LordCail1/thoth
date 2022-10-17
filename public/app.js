@@ -20,19 +20,16 @@ async function layOutCard() {
             "Content-Type":"application/json"
         }
     });
-    const card = await cardResponse.json();
+        const card = await cardResponse.json();
     
     
-    
-    
-    if (firstTimePull === false) {
-        hasBeenPulled = true;
+        let hasBeenPulled = true;
         do {
             hasBeenPulled = verifyIfCardWasPulled(card, pulledCards);
             
         } while(hasBeenPulled)
-        firstTimePull = false;
-    }
+    
+   
     
     pulledCards.push(card);
     
@@ -40,7 +37,7 @@ async function layOutCard() {
     const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);
     const image = await imageResponse;
     
-    //adding cardsto UI
+    //adding cards to UI
     addNewCard(card);
     addNewImage(image);
 }
