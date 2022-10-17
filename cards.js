@@ -507,7 +507,7 @@ const card =  [
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 38)); 
+    const randomNum = Math.floor((Math.random() * 2)); 
     return card[randomNum];
     
 }
