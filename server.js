@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
 app.get("/getAllCards", (req, res) => {
     const specificCard = card.getRandomCard();
     res.download(`./images/${specificCard.imageName}.jpg`);
-    console.log("this ran");
     console.log(specificCard);
     res.send(JSON.stringify(specificCard));
 });

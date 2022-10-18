@@ -1,3 +1,5 @@
+
+
 const generateCardsBtn = document.querySelector("[data-generate-cards]");
 const mainContainer = document.querySelector("[data-main-container]");
 const pulledCards = [];
@@ -8,42 +10,58 @@ let firstTimePull = true;
 
 
 generateCardsBtn.addEventListener("click", (e) => {
-    layOutCard().catch(error => console.log("ERROR"));
+    fetchingCard().catch(error => console.log("ERROR"));
+    
+    
+    
 });
 
 
-async function layOutCard() 
-{
-    //getting card
-    const cardResponse = await fetch("http://localhost:5000/getAllCards", {
+
+
+
+
+async function fetchingCard() {
+    hasAlreadyBeenPulled = false;
+    let card;
+    let image;
+    
+    do {
+
+        //getting card
+        const cardResponse = await fetch("http://localhost:5000/getAllCards", { 
         method: "GET",
         headers: {
-            "Content-Type":"application/json"
-        }
-    });
-        const card = await cardResponse.json();
-    
-    
-    let hasBeenPulled = true;
-    // do {
-    //     hasBeenPulled = verifyIfCardWasPulled(card, pulledCards);
+            "Content-Type":"application/json" 
+        }});
         
-    // } while(hasBeenPulled)
-    
-   
-    
+        card = await cardResponse.json();
+        
+        //getting image
+        const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);
+        image = await imageResponse;
+        
+        //if second car or more, verifying if it has already been pulled
+        if (firstTimePull === false) {
+            hasAlreadyBeenPulled = verifyIfCardWasPulled(card);
+        }
+        
+        
+    } while(hasAlreadyBeenPulled)
+    firstTimePull = false;
     pulledCards.push(card);
-    
-    //getting image
-    const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);
-    const image = await imageResponse;
-    
-    //adding cards to UI
-    addNewCard(card);
-    addNewImage(image);
+    addNewCardToPage(card)
+    addNewImageToPage(image);
 }
 
-function addNewCard(card) {
+
+
+
+
+
+
+
+function addNewCardToPage(card) {
     const newDiv = document.createElement("div");
     for (let property in card) {
         if (property === "link") {
@@ -64,7 +82,7 @@ function addNewCard(card) {
     mainContainer.appendChild(newDiv);
 }
 
-function addNewImage(image) {
+function addNewImageToPage(image) {
     const newDiv = document.createElement("div");
     const newImg = document.createElement("img");
     newImg.src = image.url;

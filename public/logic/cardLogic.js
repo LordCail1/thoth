@@ -1,10 +1,9 @@
-function verifyIfCardWasPulled(card, pulledCards) {
+function verifyIfCardWasPulled(card) {
+    let problem = false;
     pulledCards.forEach(c => {
         if (c.name === card.name) {
-            return true;
+            problem = true;
         }
     });
-    
-    return false;
-    
+    return problem;
 }
