@@ -1,5 +1,4 @@
-const { urlencoded } = require("body-parser");
-
+const numOfCardsToDraw = 38;
 
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
 yellowOrange: "Yellow-Orange", yellow: "Yellow", yellowGreen: "Yellow-Green", green: "Green", blueGreen: "Blue-Green", blue: "Blue",
@@ -507,7 +506,7 @@ const card =  [
 ];
 
 function getRandomCard() {
-    const randomNum = Math.floor((Math.random() * 10)); 
+    const randomNum = Math.floor((Math.random() * numOfCardsToDraw)); 
     return card[randomNum];
     
 }

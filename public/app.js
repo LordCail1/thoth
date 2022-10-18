@@ -22,6 +22,9 @@ generateCardsBtn.addEventListener("click", (e) => {
 
 
 async function fetchingCard() {
+    if (pulledCards.length === 38) {
+        return;
+    }
     hasAlreadyBeenPulled = false;
     let card;
     let image;
