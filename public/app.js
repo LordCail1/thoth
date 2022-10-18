@@ -12,7 +12,8 @@ generateCardsBtn.addEventListener("click", (e) => {
 });
 
 
-async function layOutCard() {
+async function layOutCard() 
+{
     //getting card
     const cardResponse = await fetch("http://localhost:5000/getAllCards", {
         method: "GET",
@@ -23,11 +24,11 @@ async function layOutCard() {
         const card = await cardResponse.json();
     
     
-        let hasBeenPulled = true;
-        do {
-            hasBeenPulled = verifyIfCardWasPulled(card, pulledCards);
-            
-        } while(hasBeenPulled)
+    let hasBeenPulled = true;
+    // do {
+    //     hasBeenPulled = verifyIfCardWasPulled(card, pulledCards);
+        
+    // } while(hasBeenPulled)
     
    
     
