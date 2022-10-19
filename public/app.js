@@ -1,9 +1,7 @@
 
-
 const generateCardsBtn = document.querySelector("[data-generate-cards]");
 const mainContainer = document.querySelector("[data-main-container]");
 const pulledCards = [];
-let firstTimePull = true;
 
 
 
@@ -22,36 +20,18 @@ async function fetchingCard() {
     if (pulledCards.length === 38) {
         return;
     }
-    hasAlreadyBeenPulled = false;
-    let card;
-    let image;
+    //getting card
+    const cardResponse = await fetch("http://localhost:5000/getCard", { 
+    method: "GET",
+    headers: {
+        "Content-Type":"application/json" 
+    }});
     
-    do {
-
-        //getting card
-        const cardResponse = await fetch("http://localhost:5000/getAllCards", { 
-        method: "GET",
-        headers: {
-            "Content-Type":"application/json" 
-        }});
-        
-        card = await cardResponse.json();
-        
-        //getting image
-        const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);
-        image = await imageResponse;
-        
-        //if second car or more, verifying if it has already been pulled
-        if (firstTimePull === false) {
-            hasAlreadyBeenPulled = verifyIfCardWasPulled(card);
-        }
-        
-        
-    } while(hasAlreadyBeenPulled)
-    firstTimePull = false;
+    card = await cardResponse.json();
+    console.log(card);
     pulledCards.push(card);
-    addNewCardToPage(card)
-    addNewImageToPage(image);
+    addNewCardToPage(card);
+    addNewImageToPage(card.imageName);
 }
 
 
@@ -82,10 +62,11 @@ function addNewCardToPage(card) {
     mainContainer.appendChild(newDiv);
 }
 
-function addNewImageToPage(image) {
+function addNewImageToPage(imageName) {
     const newDiv = document.createElement("div");
     const newImg = document.createElement("img");
-    newImg.src = image.url;
+    newImg.src = `/images/${imageName}.jpg`;
+    console.log(newImg);
     mainContainer.lastChild.appendChild(newImg);
 }
 

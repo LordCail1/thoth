@@ -1,30 +1,20 @@
+require("dotenv").config();
+const axios = require("axios");
+const debug = require("debug")("server-side");
 const express = require("express");
 const bodyParser = require("body-parser");
-const card = require("./cards");
+const getCard = require("./routes/getCard");
+const home = require("./routes/home")
 
 
 const app = express();
 
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
 app.use(express.static("public"));
-
-
-app.get("/", (req, res) => {
-    res.sendFile(`${__dirname}/index.html`);
-});
-
-app.get("/getAllCards", (req, res) => {
-    const specificCard = card.getRandomCard();
-    res.download(`./images/${specificCard.imageName}.jpg`);
-    console.log(specificCard);
-    res.send(JSON.stringify(specificCard));
-});
-
-app.get("/image", (req, res) => {
-    console.log(req.query.imageName);
-    res.download(`./images/${req.query.imageName}.jpg`);
-});
+app.use("/getCard", getCard);
+app.use("/", home);
 
 
 
@@ -33,7 +23,10 @@ app.get("/image", (req, res) => {
 
 
 
-app.listen("5000", () => {
+
+
+const port = process.env.PORT || 3000
+app.listen(port, () => {
     console.log("running server 5000");
 });
 

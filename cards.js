@@ -863,6 +863,10 @@ function getRandomCard() {
     
 }
 
+function getFireCard() {
+    
+}
+
 module.exports.card = card;
 module.exports.getRandomCard = getRandomCard;
 
