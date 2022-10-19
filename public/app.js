@@ -11,9 +11,6 @@ let firstTimePull = true;
 
 generateCardsBtn.addEventListener("click", (e) => {
     fetchingCard().catch(error => console.log("ERROR"));
-    
-    
-    
 });
 
 
