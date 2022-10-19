@@ -4,7 +4,7 @@ a {
 }
 
 body {
-  background-image: url(../background/city-light.png);
+  background-image: url(../images/background/city-light.png);
   background-position-y: -300px;
   background-attachment: fixed;
   background-size: 1900px;
