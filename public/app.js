@@ -2,7 +2,6 @@
 const generateCardsBtn = document.querySelector("[data-generate-cards]");
 const mainContainer = document.querySelector("[data-main-container]");
 const pulledCards = [];
-let firstTimePull = true;
 
 
 
@@ -21,30 +20,15 @@ async function fetchingCard() {
     if (pulledCards.length === 38) {
         return;
     }
-    hasAlreadyBeenPulled = false;
-    let card;
+    //getting card
+    const cardResponse = await fetch("http://localhost:5000/getCard", { 
+    method: "GET",
+    headers: {
+        "Content-Type":"application/json" 
+    }});
     
-    do {
-
-        //getting card
-        const cardResponse = await fetch("http://localhost:5000/getCard", { 
-        method: "GET",
-        headers: {
-            "Content-Type":"application/json" 
-        }});
-        
-        card = await cardResponse.json();
-        console.log(card);
-        
-        
-        //if second car or more, verifying if it has already been pulled
-        if (firstTimePull === false) {
-            hasAlreadyBeenPulled = verifyIfCardWasPulled(card);
-        }
-        
-        
-    } while(hasAlreadyBeenPulled)
-    firstTimePull = false;
+    card = await cardResponse.json();
+    console.log(card);
     pulledCards.push(card);
     addNewCardToPage(card);
     addNewImageToPage(card.imageName);
