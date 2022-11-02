@@ -20,11 +20,6 @@ app.use("/", home);
 
 
 
-
-
-
-
-
 const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log("running server 5000");
