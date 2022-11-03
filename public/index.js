@@ -7,9 +7,17 @@ const pulledCards = [];
 
 
 
+
 generateCardsBtn.addEventListener("click", (e) => {
     fetchingCard().catch(error => console.log("ERROR"));
+    
 });
+
+
+
+
+
+
 
 
 

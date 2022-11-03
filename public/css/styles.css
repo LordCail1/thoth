@@ -1,3 +1,32 @@
+main {
+  display: inline-block;
+}
+main .card-container {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 348px;
+  height: 600px;
+}
+main .card-container .card-link {
+  margin: 20px;
+  font-size: 0.5rem;
+}
+main .card-container .card-link:hover {
+  color: white;
+}
+main .card-container .card-info {
+  font-size: 0.5rem;
+}
+main .card-container img {
+  height: 300px;
+}
+main .card-container:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: yellow;
@@ -10,10 +39,6 @@ body {
   background-size: 1900px;
   margin: 0;
   color: white;
-}
-
-.card-info {
-  font-size: 2rem;
 }
 
 header .navbar {
@@ -43,26 +68,6 @@ header .navbar .red-fire {
 }
 header .navbar .yellow-air {
   color: yellow;
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-main .card-container {
-  padding: 50px;
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 20%;
-}
-main .card-container .card-link {
-  margin: 20px;
-  font-size: 3rem;
-}
-main .card-container .card-link:hover {
-  color: white;
 }
 
 @media screen and (min-width: 1900px) {

@@ -1,3 +1,5 @@
+@import "./cards/cards";
+
 a {
     text-decoration: none;
     color: yellow;
@@ -12,9 +14,7 @@ body {
     color: white;
 }
 
-.card-info {
-    font-size: 2rem;
-}
+
 
 header {
     .navbar {
@@ -49,27 +49,6 @@ header {
     }
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .card-container {
-        padding: 50px;
-        border: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-width: 20%;
-        .card-link {
-            margin: 20px;
-            font-size: 3rem;
-            &:hover {
-                color: white;
-            }
-
-        }
-        
-    }
-}
 
 
 
