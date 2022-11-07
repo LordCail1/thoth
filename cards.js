@@ -436,7 +436,7 @@ const card =  [
         mainColors: [mainColors.orange, mainColors.blue],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_49_Wands_10.html`,
         imageName: "TenOfWands"
-
+        
     },
     {
         name: "Princess Of Wands",
@@ -853,8 +853,189 @@ const card =  [
         mainColors: [mainColors.green, mainColors.blue, mainColors.white],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_22_Swords_Knight.html`,
         imageName: "KnightOfSwords"
+    },
+    {
+        name: "Ace Of Disks",
+        number: 1,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: null,
+        planet: null,
+        description: `The Ace of Disks (Coins), like the other Aces, refers to the possibility of dormant in us. It indicates the recognition of the potential inherent in us or in our position, which, according to the Earth element represented by the Disks (Coins), leads to tangible positive results, external but even more inner wealth. Besides the Ace of Cups, this is the most important "fortune teller" in the Minor Arcana. This luck is not intrusive, it must be discovered. Searching, as in the case of a treasure hidden in a vineyard, may be a lot of trouble. But the result is not only reliable and durable, but also promises deep happiness.`,
+        mainColors: [mainColors.green, mainColors.yellow, mainColors.brown],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_68_Disks_1.html`,
+        imageName: "AceOfDisks"
+    },
+    {
+        name: "Two Of Disks",
+        number: 2,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.capricorn,
+        planet: planet.jupiter,
+        description: `The Two of Disks is a player's decision and a carefree indecision card. It shows that we are adapting to the stream of life, through the waves and valleys we get through without difficulty. Depending on our lifestyle and the area displayed by the card, this player attitude can be judged to be skillful, smooth, fun, spontaneous, and refreshing, but it is also a nonsense, willingness to compromise, unsteadiness and adaptive flexibility. This will give the card a very wide spectrum, from the mentality of the swimmers to the deep wisdom of the fool.`,
+        mainColors: [mainColors.blue, mainColors.blueViolet],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_69_Disks_2.html`,
+        imageName: "TwoOfDisks"
+    },
+    {
+        name: "Three Of Disks",
+        number: 3,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.capricorn,
+        planet: planet.mars,
+        description: `Due to the black colors of the Disks (Coins), the Three of Disks (Coins) is often interpreted as a card of concern. In contrast, it successfully passed the exam and expresses a joyful experience. Unlike the Eight of Disks, which represents the inert, the image of the master is displayed here. With this, the card expresses that we are entering the field of new experiences, where - unlike the Eight of Disks - we are already carrying the right skills and knowledge. It shows the successful completion of a given period of our studies or development, followed by a high level of resumption.`,
+        mainColors: [mainColors.blueGreen, mainColors.red],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_70_Disks_3.html`,
+        imageName: "ThreeOfDisks"
+    },
+    {
+        name: "Four Of Disks",
+        number: 4,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.capricorn,
+        planet: planet.sun,
+        description: `The Four of Disks (Coins) refers to the excessive need for security and the resulting desire for possession, wickedness and deep-seated fear of change. There is always a lifetime in the behavior represented by the card, an endeavor to adhere to the existing state, and thus to futile confrontation with the flow of life. In each case it shows that we are on the road to stiffness. He is often a forerunner to the Tower (XVI), which is breaking down the horrible armor. If the space occupied by the Four of Disks (Coins) calls for this behavior, then we must moderate ourselves, but it may also mean that we cannot expand on this subject.`,
+        mainColors: [mainColors.orange, mainColors.yellow],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_71_Disks_4.html`,
+        imageName: "FourOfDisks"
+    },
+    {
+        name: "Five Of Disks",
+        number: 5,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.taurus,
+        planet: planet.mercury,
+        description: `The Five of the Coins is a card of crisis, deprivation and uncertainty. It symbolizes the narrow passages of life in which we feel miserable, unhappy, abandoned and truly pathetic. However, it is less of a forerunner of real losses and material failures, but rather shows that we are on insecure feet, we are afraid that the unstable soil will not hold. It shows all the conditions that characterize a developmental crisis, in which we leave areas of stability and security to address the new challenges and the risks involved.`,
+        mainColors: [mainColors.blue],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_72_Disks_5.html`,
+        imageName: "FiveOfDisks"
+    },
+    {
+        name: "Six Of Disks",
+        number: 6,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.taurus,
+        planet: planet.moon,
+        description: `The Six of Disks (Coins) represents helpfulness, generosity and tolerance. It may mean exercising these virtues, but also enjoying the generosity, understanding, and helping of others. It is not a spontaneous donation mood, which may be delayed in the next moment, or indifference that looks tolerant, but a balanced, reliable property. In everyday life, it is a reward, a rewarding business.`,
+        mainColors: [mainColors.blue, mainColors.white, mainColors.brown],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_73_Disks_6.html`,
+        imageName: "SixOfDisks"
+    },
+    {
+        name: "Seven Of Disks",
+        number: 7,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.taurus,
+        planet: planet.saturn,
+        description: `The Seven of Disks (Coins) card represent patience and slow growth. It calls for a calm look at the matter, leaving enough time for development and development. The result is definitely positive if we do not hurry and restrain our over-zeal with our disturbing influence. The Seven of Disks (Coins) with the Hanged Man (XII) and the Four of Swords are time delays. In contrast to the other two cards, progress is ongoing here.`,
+        mainColors: [mainColors.black],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_74_Disks_7.html`,
+        imageName: "SevenOfDisks"
+    },
+    {
+        name: "Eight Of Disks",
+        number: 8,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.virgo,
+        planet: planet.sun,
+        description: `The Eight of Disks (Coins) is a promising start. This is the card of the dad, who is beginning to solve a long but successful task. In this sense, the page connects its starting position with a joyful outlook. It also shows that our motivation is good, we are delighted with the thing and we are proud of our first results. In a sense, it also means luck for beginners.`,
+        mainColors: [mainColors.yellow, mainColors.black, mainColors.red],
+        link: `https://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_75_Disks_8.html`,
+        imageName: "EightOfDisks"
+    },
+    {
+        name: "Nine Of Disks",
+        number: 9,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.virgo,
+        planet: planet.venus,
+        description: `The Nine of Disks (Coins), in the traditional sense, were the card of material luck, which promises large, mostly unexpected prizes. It means surprisingly good progress, sudden luck and situations that are spoken by "the big catch" in common language. Alongside this undoubtedly strong side, which refers to the external prizes, the other interpretation of the card is the experience of a perceptible inner enrichment.`,
+        mainColors: [mainColors.green, mainColors.blueGreen],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_76_Disks_9.html`,
+        imageName: "NineOfDisks"
+    },
+    {
+        name: "Ten Of Disks",
+        number: 10,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: zodiac.virgo,
+        planet: planet.mercury,
+        description: `The Ten of Disks (Coins) denotes abundance, wealth, security, stability and the carelessness of our daily lives. It symbolizes both internal and external wealth. However, achieving spiritual completeness requires vigilant attention. In this regard, the card calls for the important spiritual aspects not to be neglected because of our business effort and our zeal. It shows that we just have to open our eyes to see and experience what the alleged gray everyday days offer.`,
+        mainColors: [mainColors.yellow, mainColors.violet],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_77_Disks_10.html`,
+        imageName: "TenOfDisks"
+    },
+    {
+        name: "Princess Of Disks",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: null,
+        planet: null,
+        description: `The Princess (Page) of Disks (Coins) indicates an opportunity, an impulse coming to our way. The Earth element displayed by the Disks (Coins) is a concrete, feasible, usable proposal. Due to the permanence of the Earth element, the offer can be considered reliable and fair. Depending on the question asked, it refers to the possibility of concluding a good deal or performing a new job. It may mean sensual experiences or a very useful suggestion that can pull out of the cat. The card's impulse and occasion are always obvious, tangible.`,
+        mainColors: [mainColors.yellow, mainColors.brown, mainColors.white],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_67_Disks_Princess.html`,
+        imageName: "PrincessOfDisks"
+    },
+    {
+        name: "Prince Of Disks",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: null,
+        planet: null,
+        description: `The Prince of Disks (Coins) embodies the mood in which we create tangible and timeless value with diligence, perseverance and persistence. Expresses a sense of trustworthy and durable things. It displays the solid, reliable ground, the foundation in which we can rely on what we can build on. It represents the atmosphere of the Earth element, the physical reality that creates security in which the tangible result, the pragmatic action counts, and which, last but not least, forms the frame of our sensual experience. Only the exaggeration of all these leads to stubbornness and rigid attachment, to a hard robot, or to the opposite, impolite laziness and sensual dereliction.`,
+        mainColors: [mainColors.brown, mainColors.black],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_66_Disks_Prince.html`,
+        imageName: "PrinceOfDisks"
+    },
+    {
+        name: "Queen Of Disks",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: null,
+        planet: null,
+        description: `The Queen of Disks (Coins) embodies the female side of the Earth element. Persistence, well-being, reliability, realistic thinking, diligence, fertility, emotion and sensual pleasure. He has a good sense of nature and fertile land, which is best illustrated by the image of a peasant woman. You can show a strong sense of material value, coupled with astringency and propriety, by the shape of Kurazsi's mother-in-law. Although her fertility and sensuality make her a great family caring mother, she can become a talented artist or a woman looking for sensual experiences, open and sensitive to all the fun of life. The exaggeration of such tendencies can lead to bitter hardness or shameless, lustful laziness.`,
+        mainColors: [mainColors.white, mainColors.brown],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_65_Disks_Queen.html`,
+        imageName: "QueenOfDisks"
+    },
+    {
+        name: "Knight Of Disks",
+        number: null,
+        majorArcana: false,
+        hebrewLetter: null,
+        element: element.earth,
+        zodiac: null,
+        planet: null,
+        description: `The Knight (King) of Disks (Coins) embodies the male side of the Earth Element, represents the pursuit of property, security, and material values, and displays our sense of reality. He evaluates actions, not words, wishes, or goodwill. It expresses our endeavor to persist, our persistence, the sure occurrence of known things. In addition, it has a sophisticated sense of feasibility and expediency, and instincts attention to beneficial business opportunities. Our time-consciousness represents the consciousness of the slow arrival of long-lasting values, our ability to wait patiently, to avoid hesitation. The King of Coins expresses the nature of a person who enjoys sensual pleasures, pleasures, and satisfaction of our sensual desires. The shady side of the card is the insatiable lifeguard, the heartless kufar and, last but not least, the comforting lounger, "the Oblomov in us", as Goncharov brilliantly portrayed.`,
+        mainColors: [mainColors.redOrange, mainColors.brown, mainColors.yellowOrange],
+        link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_64_Disks_Knight.html`,
+        imageName: "KnightOfDisks"
     }
-
 ];
 
 function getRandomCard() {
