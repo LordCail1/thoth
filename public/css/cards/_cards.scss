@@ -1,0 +1,36 @@
+
+
+
+
+
+main {
+    display: inline-block;
+    .card-container {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        width: 348px;
+        height: 600px;
+        .card-link {
+            margin: 20px;
+            font-size: 0.5rem;
+            &:hover {
+                color: white;
+            }
+            
+        }
+        .card-info {
+            font-size: 0.5rem;
+        }
+        img {
+            height: 300px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+

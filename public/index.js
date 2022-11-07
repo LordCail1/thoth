@@ -1,3 +1,4 @@
+
 const generateCardsBtn = document.querySelector("[data-generate-cards]");
 const mainContainer = document.querySelector("[data-main-container]");
 const pulledCards = [];
@@ -6,36 +7,39 @@ const pulledCards = [];
 
 
 
+
 generateCardsBtn.addEventListener("click", (e) => {
-    layOutCard().catch(error => console.log("ERROR"));
+    fetchingCard().catch(error => console.log("ERROR"));
+    
 });
 
 
-async function layOutCard() {
+
+
+
+
+
+
+
+
+
+
+async function fetchingCard() {
+    if (pulledCards.length === 38) {
+        return;
+    }
     //getting card
-    const cardResponse = await fetch("http://localhost:5000/getAllCards", {
-        method: "GET",
-        headers: {
-            "Content-Type":"application/json"
-        }
-    });
-    const card = await cardResponse.json();
+    const cardResponse = await fetch("http://localhost:5000/getCard", { 
+    method: "GET",
+    headers: {
+        "Content-Type":"application/json" 
+    }});
+    
+    card = await cardResponse.json();
+    console.log(card);
     pulledCards.push(card);
-    
-    //getting image
-    const imageResponse = await fetch(`http://localhost:5000/image?imageName=${card.imageName}`);
-    const image = await imageResponse;
-    
-    addNewCard(card);
-    addNewImage(image);
-    console.log(image);
-    
-    
-    
-    
-    
-    
-    
+    addNewCardToPage(card);
+    addNewImageToPage(card.imageName);
 }
 
 
@@ -45,8 +49,7 @@ async function layOutCard() {
 
 
 
-function addNewCard(card) {
-    console.log(card);
+function addNewCardToPage(card) {
     const newDiv = document.createElement("div");
     for (let property in card) {
         if (property === "link") {
@@ -67,13 +70,12 @@ function addNewCard(card) {
     mainContainer.appendChild(newDiv);
 }
 
-function addNewImage(image) {
+function addNewImageToPage(imageName) {
     const newDiv = document.createElement("div");
     const newImg = document.createElement("img");
-    newImg.src = image.url;
+    newImg.src = `/images/${imageName}.jpg`;
     console.log(newImg);
     mainContainer.lastChild.appendChild(newImg);
-
 }
 
 
