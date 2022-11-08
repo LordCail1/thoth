@@ -1,4 +1,4 @@
-
+const numOfCardsToDraw = 78;
 
 
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
@@ -1045,9 +1045,7 @@ function getRandomCard() {
     
 }
 
-function getFireCard() {
-    
-}
+
 
 module.exports.card = card;
 module.exports.getRandomCard = getRandomCard;
