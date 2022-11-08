@@ -1,6 +1,4 @@
 require("dotenv").config();
-const axios = require("axios");
-const debug = require("debug")("server-side");
 const express = require("express");
 
 
