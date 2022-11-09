@@ -48,4 +48,12 @@ const cardSchema = new mongoose.Schema({
     imageName: String
 });
 
-module.exports = mongoose.model("cards", cardSchema);
+cardSchema.static.random = function(callback) {
+    this.count(function (err, count) {
+        if (err) return callback(err);
+        let rand = Math.floor(Math.random() * count);
+        this.findOne().skip(rand).exec(callback);
+    }).bind(this)
+};
+
+module.exports.model = mongoose.model("cards", cardSchema);
