@@ -14,11 +14,14 @@ app.use('/cards', require('./routes/cards'));
 
 
 
+
+
 //server
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
-    mongoose.connect(process.env.DATABASE_UI, () => {
+    mongoose.connect(process.env.DATABASE_UI,
+        { useNewUrlParser: true, useUnifiedTopology: true} ,() => {
         console.log('Connected to MongoDB!');
     });
 });

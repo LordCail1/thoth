@@ -23,6 +23,7 @@
     "mongoose": "^6.7.2"
   },
   "devDependencies": {
-    "debug": "^4.3.4"
+    "debug": "^4.3.4",
+    "nodemon": "^2.0.20"
   }
 }
