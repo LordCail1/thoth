@@ -41,11 +41,15 @@ body {
   color: white;
 }
 
-header .navbar {
+.navbar {
   border: 1px solid white;
   position: fixed;
 }
-header .navbar .navbar-button {
+.navbar__item {
+  padding: 10px;
+}
+
+.btn {
   font-size: 2rem;
   padding: 10px;
   border-radius: 10px;
@@ -53,20 +57,24 @@ header .navbar .navbar-button {
   border: none;
   color: inherit;
 }
-header .navbar .navbar-button:hover {
+.btn:hover {
   cursor: pointer;
   background-color: rgb(0, 0, 0);
 }
-header .navbar .blue-water {
+
+.blue-water {
   color: dodgerblue;
 }
-header .navbar .brown-earth {
+
+.brown-earth {
   color: brown;
 }
-header .navbar .red-fire {
+
+.red-fire {
   color: red;
 }
-header .navbar .yellow-air {
+
+.yellow-air {
   color: yellow;
 }
 

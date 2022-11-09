@@ -16,38 +16,44 @@ body {
 
 
 
-header {
-    .navbar {
-        border: 1px solid white;
-        position: fixed;
-    
-        .navbar-button {
-            font-size: 2rem;
-            padding: 10px;
-            border-radius: 10px;
-            background: rgba(0,0,0,0.2);
-            border: none;
-            color: inherit;
-            &:hover {
-                cursor: pointer;
-                background-color: rgba(0,0,0,1);
-            }
-        }
-        .blue-water {
-            color: dodgerblue;
-        }
-        .brown-earth {
-            color: brown;
-        }
-        .red-fire {
-            color: red;
-        }
-        .yellow-air {
-            color: yellow;
+.navbar {
+    &__item {
+        padding: 10px;
+        
+    }
+    border: 1px solid white;
+    position: fixed;
+}
 
-        }
+
+.btn {
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+    border: none;
+    color: inherit;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,1);
     }
 }
+
+.blue-water {
+    color: dodgerblue;
+}
+.brown-earth {
+    color: brown;
+}
+.red-fire {
+    color: red;
+}
+.yellow-air {
+    color: yellow;
+    
+}
+
+
 
 
 
