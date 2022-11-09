@@ -14,12 +14,13 @@ generateCardsBtn.addEventListener("click", (e) => {
 
 
 async function fetchingCard() {
-    const cardResponse = await fetch("http://localhost:5000/getCard", { 
+    const cardResponse = await fetch("http://localhost:5000/cards/allCards", { 
     method: "GET",
     headers: {
         "Content-Type":"application/json" 
     }});
-    
+    const cards = await cardResponse.json();
+    console.log(cards);
 }
 
 
