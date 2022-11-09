@@ -1,4 +1,6 @@
-const Cards = require('../models/cards');
+const startingPool = require('../models/startingPoolCards');
+const sessionPool = require('../models/sessionPoolCards');
+
 
 
 
@@ -7,7 +9,7 @@ const Cards = require('../models/cards');
 
 
 module.exports = async function (req, res) {
-    const cards = await Cards.find();
+    const cards = await startingPool.find();
     console.log(cards);
     res.end();
 }

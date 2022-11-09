@@ -1,4 +1,7 @@
-const Cards = require('../models/cards');
+const startingPool = require('../models/startingPoolCards');
+const sessionPool = require('../models/sessionPoolCards');
+
+const debug = require('debug')('card');
 
 
 
@@ -7,20 +10,29 @@ const Cards = require('../models/cards');
 
 
 module.exports = async function (req, res) {
-    const cards = await Cards.find();
-
-    
-    res.end();
-
+    try {
+        const cards = await startingPool.find();
+        const card = singleCard(cards);
+        res.send(card);
+    } catch (err) {
+        console.log(err.message);
+    }
 }
 
 
 
 
 
-function getSingleCard() {
-    for (let card of cards)
 
 
 
+
+
+
+function singleCard(cards) {
+    const i = Math.floor(Math.random() * cards.length + 1);
+    return cards[i];
 }
+
+
+

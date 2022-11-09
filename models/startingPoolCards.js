@@ -1,5 +1,5 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
-
 
 
 
@@ -48,4 +48,4 @@ const cardSchema = new mongoose.Schema({
     imageName: String
 });
 
-module.exports = mongoose.model("cards", cardSchema);
+module.exports = mongoose.model(process.env.COLLECTION_START, cardSchema);
