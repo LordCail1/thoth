@@ -39,6 +39,12 @@ body {
   background-size: 1900px;
   margin: 0;
   color: white;
+  height: 100vh;
+  position: relative;
+}
+
+main {
+  position: relative;
 }
 
 .navbar {
@@ -50,16 +56,24 @@ body {
 }
 
 .btn {
-  font-size: 2rem;
-  padding: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
   border: none;
   color: inherit;
 }
-.btn:hover {
+
+.cardContainer {
+  background-image: url(../images/Art.jpg);
+  height: 350px;
+  width: 227px;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 5px;
+  background-size: cover;
+}
+.cardContainer:hover {
   cursor: pointer;
-  background-color: rgb(0, 0, 0);
 }
 
 .blue-water {
@@ -76,6 +90,28 @@ body {
 
 .yellow-air {
   color: yellow;
+}
+
+.navBtn {
+  font-size: 2rem;
+  padding: 10px;
+}
+.navBtn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+}
+
+.resetBtn {
+  font-size: 1.5rem;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  transition: background-color ease-in-out 100ms;
+}
+.resetBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1900px) {
