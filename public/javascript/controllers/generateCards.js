@@ -4,8 +4,8 @@
 
 
 generateCardsBtn.addEventListener('click', (e) => {
-    if (pulledCards.length === 20) {
-        alert('You have already pulled 20 cards!');
+    if (pulledCards.length === 35) {
+        alert(`You have already pulled ${pulledCards.length} cards!`);
         return;
     }
     singeCard();
