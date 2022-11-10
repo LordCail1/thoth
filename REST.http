@@ -1,0 +1,18 @@
+
+//get homepage
+GET http://localhost:5000/
+
+
+//get All Cards
+###
+GET http://localhost:5000/cards/allCards
+
+
+//get Single Card
+###
+GET http://localhost:5000/cards/card
+
+
+//ResetCards
+###
+GET http://localhost:5000/cards/resetCards
