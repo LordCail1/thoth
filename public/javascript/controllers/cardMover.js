@@ -1,6 +1,37 @@
+let selectedCard;
 
-moveBehaviorToCards();
+document.addEventListener('mousedown', e => {
+    if (e.target.classList.contains('cardContainer')) {
+        selectedCard = e.target;
+        selectedCard.classList.add('selected-card');
 
+
+        selectedCard.addEventListener('mouseup', ev => {
+            selectedCard.classList.remove('selected-card');
+        });
+    }
+});
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowUp') {
+        console.log('arrow went up');
+        selectedCard.style.zIndex = `${selectedCard.style.zIndex + 1}`;
+    }
+    if (e.key === 'ArrowDown') {
+        console.log('arrow went down');
+        selectedCard.style.zIndex = `${selectedCard.style.zIndex - 1}`;
+    }
+});
+
+
+// document.addEventListener('mousedown', e => {
+//     if (e.target.classList.contains('cardContainer')) {
+//         e.target.style.zIndex = '1';
+//         e.target.addEventListener('mouseup', ev => {
+//             ev.target.style.zIndex = '0';
+//         });
+//     }
+// });
 
 
 function moveBehaviorToCards() {

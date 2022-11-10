@@ -1,12 +1,6 @@
-
-
-
-
-
-
-
 resetBtn.addEventListener('click', (e) => {
     reset();
+    deleteAllCardsFromScreen();
 });
 
 
@@ -22,4 +16,9 @@ async function reset() {
     } catch (err) {
         console.log(err.message);
     }
+}
+
+function deleteAllCardsFromScreen() {
+    // const cards = document.querySelectorAll('.cardContainer');
+    cardTable.innerHTML = "";
 }
