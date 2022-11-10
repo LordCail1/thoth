@@ -34,10 +34,7 @@ function moveBehaviorToCards() {
             degreeOfRotation -= increment;
         }
         lastCardDropped.style.transform = `rotate(${degreeOfRotation}deg)`;
-    })
-    
-    
-    
+    });
 }
 
 
