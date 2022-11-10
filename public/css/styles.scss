@@ -1,4 +1,6 @@
-@import "./cards/cards";
+@import 
+"./cards/cards",
+"./_variables";
 
 a {
     text-decoration: none;
@@ -6,51 +8,83 @@ a {
 }
 
 body {
+    background-attachment: fixed;
     background-image: url(../images/background/city-light.png);
     background-position-y: -300px;
-    background-attachment: fixed;
     background-size: 1900px;
-    margin: 0;
     color: white;
+    height: 100vh;
+    margin: 0;
+    position: relative;
 }
 
+main {
+    position: relative;
+}
 
+.navbar {
+    &__item {
+        padding: 10px;
+    }
+    border: 1px solid white;
+    position: fixed;
+}
 
-header {
-    .navbar {
-        border: 1px solid white;
-        position: fixed;
-    
-        .navbar-button {
-            font-size: 2rem;
-            padding: 10px;
-            border-radius: 10px;
-            background: rgba(0,0,0,0.2);
-            border: none;
-            color: inherit;
-            &:hover {
-                cursor: pointer;
-                background-color: rgba(0,0,0,1);
-            }
-        }
-        .blue-water {
-            color: dodgerblue;
-        }
-        .brown-earth {
-            color: brown;
-        }
-        .red-fire {
-            color: red;
-        }
-        .yellow-air {
-            color: yellow;
+.btn {
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: none;
+    color: inherit;
+}
 
-        }
+.cardContainer {
+    background-image: url(../images/Art.jpg);
+    background-size: cover;
+    display: block;
+    height: $heightOfCard;
+    left: 5px;
+    position: absolute;
+    top: 80px;
+    width: $widthOfCard;
+    &:hover {
+        cursor: pointer;
     }
 }
 
+.blue-water {
+    color: dodgerblue;
+}
+.brown-earth {
+    color: brown;
+}
+.red-fire {
+    color: red;
+}
+.yellow-air {
+    color: yellow;
+}
 
+.navBtn {
+    font-size: 2rem;
+    padding: 10px;
+    &:hover {
+        background-color: rgba(0,0,0,1);
+        cursor: pointer;
+    }
+}
 
+.resetBtn {
+    font-size: 1.5rem;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    transition: background-color ease-in-out 100ms;
+    &:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
 
 @media screen and (min-width: 1900px) {
     body {

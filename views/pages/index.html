@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--StyleSheet only to work on CSS-->
+    <!-- <link rel="stylesheet" href="../../public/css/styles.css"> -->
+
+
+    <!--My own StyleSheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tarot</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="btn navBtn" data-generate-cards>Generate cards</button>
+            <span class="navbar__item red-fire" data-fire-perc>Fire: </span>
+            <span class="navbar__item blue-water" data-water-perc>Water: </span>
+            <span class="navbar__item yellow-air" data-air-perc>Air: </span>
+            <span class="navbar__item brown-earth" data-earth-perc>Earth: </span>
+        </nav>
+        <button class="btn resetBtn" data-reset-btn>Reset</button>
+    </header>
+    <main data-main-container>
+        <button class="cardContainer">
+
+
+            
+        </button>
+    </main>
+    <script src="./javascript/index.js"></script>
+    <script src="./javascript/controllers/cardMover.js"></script>
+</body>
+</html>

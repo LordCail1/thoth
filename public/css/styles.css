@@ -33,45 +33,89 @@ a {
 }
 
 body {
+  background-attachment: fixed;
   background-image: url(../images/background/city-light.png);
   background-position-y: -300px;
-  background-attachment: fixed;
   background-size: 1900px;
-  margin: 0;
   color: white;
+  height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
-header .navbar {
+main {
+  position: relative;
+}
+
+.navbar {
   border: 1px solid white;
   position: fixed;
 }
-header .navbar .navbar-button {
-  font-size: 2rem;
+.navbar__item {
   padding: 10px;
-  border-radius: 10px;
+}
+
+.btn {
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   border: none;
   color: inherit;
 }
-header .navbar .navbar-button:hover {
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
+
+.cardContainer {
+  background-image: url(../images/Art.jpg);
+  background-size: cover;
+  display: block;
+  height: 250px;
+  left: 5px;
+  position: absolute;
+  top: 80px;
+  width: 162px;
 }
-header .navbar .blue-water {
+.cardContainer:hover {
+  cursor: pointer;
+}
+
+.blue-water {
   color: dodgerblue;
 }
-header .navbar .brown-earth {
+
+.brown-earth {
   color: brown;
 }
-header .navbar .red-fire {
+
+.red-fire {
   color: red;
 }
-header .navbar .yellow-air {
+
+.yellow-air {
   color: yellow;
+}
+
+.navBtn {
+  font-size: 2rem;
+  padding: 10px;
+}
+.navBtn:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.resetBtn {
+  font-size: 1.5rem;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  transition: background-color ease-in-out 100ms;
+}
+.resetBtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1900px) {
   body {
     background-size: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

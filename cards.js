@@ -1,4 +1,4 @@
-
+const numOfCardsToDraw = 78;
 
 
 const mainColors = {red: "Red", redOrange: "Red-Orange", orange: "Orange", 
@@ -185,7 +185,7 @@ const card =  [
         element: element.water,
         zodiac: null,
         planet: null,
-        description: `The superficial meaning of the Hanged Man is that we are stuck, we are in a dog clutch. However, looking deeper, the external immobility of this forced resting state is indispensable. It is also possible to change our world view and our whole life with in-depth analysis. This episode of condemnation can be characterized by the image of the disease, which is often indicated by the card. The other names of the 12th card are: the world set on his head, the crucified, the victim, the trial. The male figure on the card is upside-down, with two legs hanging by his feet. However, this uncomfortable posture makes it easy: the man crouches one of his legs playfully, holding a flute in his hand. This condition causes more joy than pain. CG Jung writes about the experience expressed by the Hanged Man: "The dislocation ... can be a positive" hanging ", which, on the one hand, appears to be an insurmountable difficulty, and on the other hand it represents a unique situation that requires maximum effort and therefore wants a whole person."`,
+        description: `The superficial meaning of the Hanged Man is that we are stuck, we are in a dog clutch. However, looking deeper, the external immobility of this forced resting state is indispensable. It is also possible to change our world view and our whole life with in-depth analysis. This episode of condemnation can be characterized by the image of the disease, which is often indicated by the card. The other names of the 12th card are: the world set on his head, the crucified, the victim, the trial. The male figure on the card is upside-down, with two legs hanging by his feet. However, this uncomfortable posture makes it easy: the man crouches one of his legs playfully, holding a flute in his hand. This condition causes more joy than pain. CG Jung writes about the experience expressed by the Hanged Man: "The dislocation ... can be a positive" hanging ", which, on the one hand, appears to be an insurmountable difficulty, and on the other hand it represents a unique situation that requires maximum effort and therefore wants a whole person.`,
         mainColors: [mainColors.blueGreen, mainColors.blue, mainColors.white],
         link: `http://www.tarrdaniel.com/documents/Hermetic/tarot/tarot_cards/Tarot_12_Hanged_Man.html`,
         imageName: "TheHangedMan"
@@ -1045,9 +1045,7 @@ function getRandomCard() {
     
 }
 
-function getFireCard() {
-    
-}
+
 
 module.exports.card = card;
 module.exports.getRandomCard = getRandomCard;
