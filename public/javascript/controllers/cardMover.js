@@ -7,7 +7,6 @@ const card = document.querySelector('.cardContainer');
 
 card.addEventListener('mousedown', (e) => {
     card.addEventListener('mousemove', onDrag);
-    
 });
 
 
@@ -21,7 +20,6 @@ function onDrag({movementX, movementY}) {
 
 document.addEventListener('mouseup', () => {
     card.removeEventListener('mousemove', onDrag);
-
 })
 
 //create a function that will rotate the card when I use the mouse wheel
@@ -29,8 +27,9 @@ document.addEventListener('mouseup', () => {
 
 
 let degreeOfRotation = 0;
-card.addEventListener('wheel', (e) => {
-    let increment = 5;
+
+card.addEventListener('wheel', e => {
+    const increment = 5;
     if (e.deltaY > 0) {
         degreeOfRotation += increment;
     } else {
