@@ -33,13 +33,13 @@ a {
 }
 
 body {
+  background-attachment: fixed;
   background-image: url(../images/background/city-light.png);
   background-position-y: -300px;
-  background-attachment: fixed;
   background-size: 1900px;
-  margin: 0;
   color: white;
   height: 100vh;
+  margin: 0;
   position: relative;
 }
 
@@ -56,21 +56,21 @@ main {
 }
 
 .btn {
-  border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   border: none;
   color: inherit;
 }
 
 .cardContainer {
   background-image: url(../images/Art.jpg);
-  height: 250px;
-  width: 162px;
+  background-size: cover;
   display: block;
+  height: 250px;
+  left: 5px;
   position: absolute;
   top: 80px;
-  left: 5px;
-  background-size: cover;
+  width: 162px;
 }
 .cardContainer:hover {
   cursor: pointer;
@@ -97,8 +97,8 @@ main {
   padding: 10px;
 }
 .navBtn:hover {
-  cursor: pointer;
   background-color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .resetBtn {
@@ -118,4 +118,4 @@ main {
   body {
     background-size: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

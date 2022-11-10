@@ -8,13 +8,13 @@ a {
 }
 
 body {
+    background-attachment: fixed;
     background-image: url(../images/background/city-light.png);
     background-position-y: -300px;
-    background-attachment: fixed;
     background-size: 1900px;
-    margin: 0;
     color: white;
     height: 100vh;
+    margin: 0;
     position: relative;
 }
 
@@ -22,42 +22,34 @@ main {
     position: relative;
 }
 
-
-
 .navbar {
     &__item {
         padding: 10px;
-        
     }
     border: 1px solid white;
     position: fixed;
 }
 
-
 .btn {
-    border-radius: 10px;
     background: rgba(0,0,0,0.2);
+    border-radius: 10px;
     border: none;
     color: inherit;
 }
 
 .cardContainer {
     background-image: url(../images/Art.jpg);
-    height: $heightOfCard;
-    width: $widthOfCard;
+    background-size: cover;
     display: block;
+    height: $heightOfCard;
+    left: 5px;
     position: absolute;
     top: 80px;
-    left: 5px;
-    background-size: cover;
+    width: $widthOfCard;
     &:hover {
         cursor: pointer;
     }
 }
-
-
-
-
 
 .blue-water {
     color: dodgerblue;
@@ -70,15 +62,14 @@ main {
 }
 .yellow-air {
     color: yellow;
-    
 }
 
 .navBtn {
     font-size: 2rem;
     padding: 10px;
     &:hover {
-        cursor: pointer;
         background-color: rgba(0,0,0,1);
+        cursor: pointer;
     }
 }
 
@@ -93,13 +84,7 @@ main {
         color: black;
         cursor: pointer;
     }
-
 }
-
-
-
-
-
 
 @media screen and (min-width: 1900px) {
     body {
