@@ -39,7 +39,7 @@ async function singeCard() {
 
 
 function cardOnUI(card) {
-    const cardContainer = document.createElement('button');
+    const cardContainer = document.createElement('div');
     cardContainer.classList.add('cardContainer');
     for (let property in card) {
         if (property === "imageName") {
