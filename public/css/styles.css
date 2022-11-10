@@ -63,10 +63,9 @@ main {
 }
 
 .cardContainer {
-  background-image: url(../images/Art.jpg);
   background-size: cover;
   display: block;
-  height: 250px;
+  height: 255px;
   left: 5px;
   position: absolute;
   top: 80px;
@@ -118,4 +117,4 @@ main {
   body {
     background-size: 100%;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
