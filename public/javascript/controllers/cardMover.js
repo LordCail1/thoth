@@ -23,3 +23,18 @@ document.addEventListener('mouseup', () => {
     card.removeEventListener('mousemove', onDrag);
 
 })
+
+//create a function that will rotate the card when I use the mouse wheel
+
+
+
+let degreeOfRotation = 0;
+card.addEventListener('wheel', (e) => {
+    let increment = 5;
+    if (e.deltaY > 0) {
+        degreeOfRotation += increment;
+    } else {
+        degreeOfRotation -= increment;
+    }
+    card.style.transform = `rotate(${degreeOfRotation}deg)`;
+});

@@ -64,8 +64,8 @@ main {
 
 .cardContainer {
   background-image: url(../images/Art.jpg);
-  height: 350px;
-  width: 227px;
+  height: 250px;
+  width: 162px;
   display: block;
   position: absolute;
   top: 80px;
