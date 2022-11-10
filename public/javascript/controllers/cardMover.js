@@ -10,9 +10,7 @@ function moveBehaviorToCards() {
 
     
     for (let card of cards) {
-        console.log(card);
         card.addEventListener('mousedown', (e) => {
-            console.log('something happend there!');
             card.addEventListener('mousemove', onDrag);
         });
         

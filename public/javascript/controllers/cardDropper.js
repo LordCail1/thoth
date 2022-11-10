@@ -23,14 +23,7 @@ async function singeCard() {
         const card = await cardResponse.json();
         if (!card) return;
         pulledCards.push(card);
-        console.log(card);
         cardOnUI(card);
-
-
-
-
-
-
     } catch (err) {
         console.log(err.message);
     }
