@@ -23,8 +23,29 @@ async function singeCard() {
         const card = await cardResponse.json();
         if (!card) return;
         pulledCards.push(card);
-        console.log(pulledCards);
+        console.log(card);
+        cardOnUI(card);
+
+
+
+
+
+
     } catch (err) {
         console.log(err.message);
     }
+}
+
+
+
+function cardOnUI(card) {
+    const cardContainer = document.createElement('button');
+    cardContainer.classList.add('cardContainer');
+    for (let property in card) {
+        if (property === "imageName") {
+            cardContainer.style.backgroundImage = `url('../../images/${card[property]}.jpg')`
+        }
+    }
+    cardTable.appendChild(cardContainer);
+    moveBehaviorToCards();
 }
