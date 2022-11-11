@@ -65,11 +65,11 @@ main {
 .cardContainer {
   background-size: cover;
   display: block;
-  height: 200px;
+  height: 250px;
   left: 5px;
   position: absolute;
   top: 80px;
-  width: 127px;
+  width: 158px;
 }
 .cardContainer:hover {
   cursor: pointer;
