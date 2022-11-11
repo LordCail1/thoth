@@ -24,15 +24,6 @@ document.addEventListener('keydown', e => {
 });
 
 
-// document.addEventListener('mousedown', e => {
-//     if (e.target.classList.contains('cardContainer')) {
-//         e.target.style.zIndex = '1';
-//         e.target.addEventListener('mouseup', ev => {
-//             ev.target.style.zIndex = '0';
-//         });
-//     }
-// });
-
 
 function moveBehaviorToCards() {
     const arrayOfCards = document.querySelectorAll('.cardContainer');

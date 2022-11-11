@@ -3,10 +3,6 @@ const sessionPoolCards = require('../models/sessionPoolCards');
 const startingPoolCards = require('../models/startingPoolCards');
 const multipleCardsDump = require('../middleware/multipleCardsDump');
 
-
-
-
-
 module.exports = async function(req, res) {
     try {
         await sessionPoolCards.deleteMany();
