@@ -1,10 +1,12 @@
 refreshStatsBtn.addEventListener('click',e => {
     howMuchOfElements();
-
-
 });
 
 function howMuchOfElements() {
+    if (pulledCards.length === 0) {
+        console.log('no cards yet');
+        return;
+    }
     const elementArray = addingElementsToArray();
     countElement(elementArray);
     const percOfFire = calculatePercentage(fireCards, pulledCards.length);
