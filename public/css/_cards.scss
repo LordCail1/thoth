@@ -1,4 +1,4 @@
-@import "../variables";
+@import "./variables";
 
 .cardContainer {
     background-size: cover;
@@ -12,6 +12,9 @@
         cursor: pointer;
     }
 }
+
+//q: how does box-shadow work?
+//a: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
 
 
 
