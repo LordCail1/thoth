@@ -11,27 +11,6 @@
   cursor: pointer;
 }
 
-.searchBar {
-  left: 50%;
-  position: fixed;
-  top: 100px;
-}
-.searchBar__input {
-  border-radius: 3px;
-  border: none;
-  padding: 10px;
-}
-.searchBar__textarea {
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 600;
-  outline: none;
-  transition: box-shadow ease-in-out 100ms;
-}
-.searchBar__textarea:focus {
-  box-shadow: 0 0 10px 2px rgb(255, 187, 0);
-}
-
 .notePad {
   background-color: rgba(0, 0, 0, 0.3);
   bottom: 0;
@@ -48,12 +27,15 @@
   grid-column: 2/40;
   grid-row: 2/10;
   background-color: rgb(45, 45, 101);
-  color: green;
+  color: rgb(36, 0, 128);
   padding: 20px;
   outline: none;
   border-top: 1px solid white;
   border-left: 1px solid white;
   resize: none;
+}
+.notePad__btn:hover {
+  cursor: pointer;
 }
 
 a {

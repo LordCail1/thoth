@@ -25,10 +25,12 @@
         resize: none;
         
     }
-    &__btn1 {
-        background-color: black;
+    &__btn {
 
-
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

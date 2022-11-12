@@ -1,7 +1,6 @@
 @import 
 "./cards/cards",
 "./_variables",
-"./searchBar",
 "./notePad";
 
 a {
@@ -30,7 +29,7 @@ main {
     display: inline-block;
     position: relative;
 
-}
+} 
 
 .navbar {
     display: flex;
