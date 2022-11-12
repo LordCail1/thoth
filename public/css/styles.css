@@ -1,35 +1,65 @@
-main {
-  display: inline-block;
+.cardContainer {
+  background-size: cover;
+  display: block;
+  height: 250px;
+  left: 5px;
+  position: absolute;
+  top: 80px;
+  width: 158px;
 }
-main .card-container {
-  border: 1px solid white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  width: 348px;
-  height: 600px;
-}
-main .card-container .card-link {
-  margin: 20px;
-  font-size: 0.5rem;
-}
-main .card-container .card-link:hover {
-  color: white;
-}
-main .card-container .card-info {
-  font-size: 0.5rem;
-}
-main .card-container img {
-  height: 300px;
-}
-main .card-container:hover {
+.cardContainer:hover {
   cursor: pointer;
 }
 
+.searchBar {
+  left: 50%;
+  position: fixed;
+  top: 100px;
+}
+.searchBar__input {
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+.searchBar__textarea {
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  transition: box-shadow ease-in-out 100ms;
+}
+.searchBar__textarea:focus {
+  box-shadow: 0 0 10px 2px rgb(255, 187, 0);
+}
+
+.notePad {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(39, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  height: 40vh;
+  position: fixed;
+  width: 100%;
+}
+.notePad__textarea {
+  font-weight: 400;
+  font-size: 1.5rem;
+  grid-column: 2/40;
+  grid-row: 2/10;
+  background-color: rgb(45, 45, 101);
+  color: green;
+  padding: 20px;
+  outline: none;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  resize: none;
+}
+
 a {
-  text-decoration: none;
   color: yellow;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,13 +73,21 @@ body {
   position: relative;
 }
 
+header {
+  position: relative;
+}
+
 main {
+  display: inline-block;
   position: relative;
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
   border: 1px solid white;
   position: fixed;
+  width: 100%;
 }
 .navbar__item {
   padding: 10px;
@@ -62,17 +100,8 @@ main {
   color: inherit;
 }
 
-.cardContainer {
-  background-size: cover;
-  display: block;
-  height: 250px;
-  left: 5px;
-  position: absolute;
-  top: 80px;
-  width: 158px;
-}
-.cardContainer:hover {
-  cursor: pointer;
+button[data-refresh-stats] {
+  margin-left: 400px;
 }
 
 .blue-water {
@@ -103,9 +132,8 @@ main {
 .resetBtn {
   font-size: 1.5rem;
   padding: 10px;
-  position: absolute;
-  right: 0;
   transition: background-color ease-in-out 100ms;
+  margin-left: auto;
 }
 .resetBtn:hover {
   background-color: white;

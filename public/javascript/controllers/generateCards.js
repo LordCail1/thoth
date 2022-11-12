@@ -4,8 +4,8 @@
 
 
 generateCardsBtn.addEventListener('click', (e) => {
-    if (pulledCards.length === 35) {
-        alert(`You have already pulled ${pulledCards.length} cards!`);
+    if (pulledCards.length === 79) {
+        console.log(`You have already pulled all the cards!`);
         return;
     }
     singeCard();
@@ -23,7 +23,6 @@ async function singeCard() {
         const card = await cardResponse.json();
         if (!card) return;
         pulledCards.push(card);
-        console.log(card);
         cardOnUI(card);
     } catch (err) {
         console.log(err.message);

@@ -1,10 +1,14 @@
 @import 
 "./cards/cards",
-"./_variables";
+"./_variables",
+"./searchBar",
+"./notePad",
+"./notePad";
 
 a {
-    text-decoration: none;
     color: yellow;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,18 +20,28 @@ body {
     height: 100vh;
     margin: 0;
     position: relative;
+    
 }
 
-main {
+header {
     position: relative;
 }
 
+main {
+    display: inline-block;
+    position: relative;
+
+}
+
 .navbar {
+    display: flex;
+    align-items: center;
     &__item {
         padding: 10px;
     }
     border: 1px solid white;
     position: fixed;
+    width: 100%;
 }
 
 .btn {
@@ -37,18 +51,11 @@ main {
     color: inherit;
 }
 
-.cardContainer {
-    background-size: cover;
-    display: block;
-    height: $heightOfCard;
-    left: 5px;
-    position: absolute;
-    top: 80px;
-    width: $widthOfCard;
-    &:hover {
-        cursor: pointer;
-    }
+button[data-refresh-stats] {
+    margin-left: 400px;
 }
+
+
 
 .blue-water {
     color: dodgerblue;
@@ -75,9 +82,8 @@ main {
 .resetBtn {
     font-size: 1.5rem;
     padding: 10px;
-    position: absolute;
-    right: 0;
     transition: background-color ease-in-out 100ms;
+    margin-left: auto;
     &:hover {
         background-color: white;
         color: black;

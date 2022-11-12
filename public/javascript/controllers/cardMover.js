@@ -14,11 +14,9 @@ document.addEventListener('mousedown', e => {
 
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowUp') {
-        console.log('arrow went up');
         selectedCard.style.zIndex = `${selectedCard.style.zIndex + 1}`;
     }
     if (e.key === 'ArrowDown') {
-        console.log('arrow went down');
         selectedCard.style.zIndex = `${selectedCard.style.zIndex - 1}`;
     }
 });
@@ -69,12 +67,6 @@ function moveBehaviorToCards() {
 
 
 
-
-
-
-
-
-//create a function that will rotate the card when I use the mouse wheel
 
 
 

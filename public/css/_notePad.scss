@@ -1,0 +1,29 @@
+@import 
+"./variables";
+
+
+.notePad {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(39, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 40vh;
+    position: fixed;
+    width: 100%;
+    &__textarea {
+        font-weight: 400;
+        font-size: 1.5rem;
+        grid-column: 2/40;
+        grid-row: 2/10;
+        background-color: rgb(45, 45, 101);
+        color:green;
+        padding: 20px;
+        outline: none;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        resize: none;
+        
+    }
+}
+
