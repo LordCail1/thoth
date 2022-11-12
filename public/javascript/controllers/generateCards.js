@@ -9,6 +9,8 @@ generateCardsBtn.addEventListener('click', (e) => {
         return;
     }
     singeCard();
+    console.log(pulledCards);
+
 });
 
 
@@ -50,9 +52,17 @@ function cardOnUI(card) {
         console.log('descText was empty!');
     }
 
+    const {link} = card;
+    if (!link) {
+        console.log('link was empty');
+        return;
+    };
 
+    const {linkText} = link[0];
+    
     cardContainer.style.backgroundImage = `url('../../images/${imageName}.jpg')`
     cardContainer.dataset.description = descText;
+    cardContainer.dataset.linkText = linkText;
     
     cardTable.appendChild(cardContainer);
     moveBehaviorToCards();
