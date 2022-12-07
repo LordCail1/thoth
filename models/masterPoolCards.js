@@ -47,7 +47,7 @@ const cardSchema = new mongoose.Schema({
     imageName: String
 });
 
-module.exports = mongoose.model(process.env.COLLECTION_PROD, cardSchema);
+module.exports = mongoose.model('cards', cardSchema);
 
 
 

@@ -28,7 +28,7 @@ const cardSchema = new mongoose.Schema({
     imageName: String
 });
 
-module.exports = mongoose.model(process.env.COLLECTION_CURNT, cardSchema);
+module.exports = mongoose.model('currentSessionPool', cardSchema);
 
 
 
