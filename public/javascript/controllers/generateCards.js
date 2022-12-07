@@ -17,7 +17,7 @@ generateCardsBtn.addEventListener('click', (e) => {
 
 async function singeCard() {
     try {
-        const cardResponse = await fetch('http://localhost:5001/cards/card', { 
+        const cardResponse = await fetch(`${document.location.origin}/cards/card`, { 
         method: 'GET',
         headers: {
             "Content-Type":"application/json" 

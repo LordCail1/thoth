@@ -8,7 +8,7 @@ resetBtn.addEventListener('click', (e) => {
 async function fetchCards() {
     pulledCards = [];
     try {
-        const response = await fetch('http://localhost:5000/cards/resetCards', {
+        const response = await fetch(`${document.location.origin}/cards/resetCards`, {
         method: 'GET',
         headers: {
             "Content-Type": "application/json"
